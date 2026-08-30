@@ -20,7 +20,7 @@ parameters:
 
     excludePaths:
         # exclude starter kit files
-        # - ./path/to/file
+        - ./database/migrations/2026_08_30_084706_create_permission_tables.php
 #    ignoreErrors:
 #        - '#PHPDoc tag @var#'
 #
