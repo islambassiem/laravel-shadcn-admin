@@ -21,6 +21,9 @@ class DatabaseSeeder extends Seeder
             CountrySeeder::class,
             EmployeeCategorySeeder::class,
             EmployeeSeeder::class,
+            QualificationSpecialityCategorySeeder::class,
+            QualificationSpecialitySeeder::class,
+            QualificationIncludedSpecializationSeeder::class,
         ]);
     }
 }

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\File;
 
 class DataSeeder
 {
-    public static function run(string $filename, string $table, ?int $lookup_type_id = null): void
+    public static function run(string $filename, string $table, ?int $lookup_type_id = null, ?int $category_id = null): void
     {
         $fileContent = File::get(database_path("data/$filename"));
 
@@ -28,6 +28,10 @@ class DataSeeder
 
             if ($lookup_type_id) {
                 $data['lookup_type_id'] = $lookup_type_id;
+            }
+
+            if ($category_id) {
+                $data['category_id'] = $category_id;
             }
 
             DB::table($table)->insert($data);

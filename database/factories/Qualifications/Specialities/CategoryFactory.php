@@ -1,0 +1,33 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Database\Factories\Qualifications\Specialities;
+
+use App\Models\Qualifications\Specialities\Category;
+use Illuminate\Database\Eloquent\Attributes\Table;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends Factory<Category>
+ */
+#[Table('qualifications_specialities_categories')]
+class CategoryFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => [
+                'en' => fake()->word(),
+                'ar' => fake('ar_SA')->word(),
+            ],
+            'code' => fake()->unique()->numberBetween(1, 100000000),
+            'order' => fake()->numberBetween(1, 100),
+        ];
+    }
+}
