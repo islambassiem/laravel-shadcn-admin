@@ -7,7 +7,7 @@ namespace Database\Seeders;
 use App\Services\DataSeeder;
 use Illuminate\Database\Seeder;
 
-class CategorySeeder extends Seeder
+class EmployeeCategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +15,7 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         DataSeeder::run(
-            filename: 'categories.json',
+            filename: 'employee_categories.json',
             table: 'lookup_categories'
         );
     }

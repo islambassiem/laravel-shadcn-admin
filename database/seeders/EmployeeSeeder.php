@@ -5,8 +5,8 @@ namespace Database\Seeders;
 use App\Models\Employees\Category;
 use App\Models\Employees\Employee;
 use App\Models\Lookups\Country;
-use App\Models\Lookups\Department;
 use App\Models\Lookups\LookupValue;
+use App\Models\Organization\Department;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 

@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             LookupValueSeeder::class,
             DepartmentSeeder::class,
             CountrySeeder::class,
-            CategorySeeder::class,
+            EmployeeCategorySeeder::class,
             EmployeeSeeder::class,
         ]);
     }

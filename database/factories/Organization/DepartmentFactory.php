@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Database\Factories\Lookups;
+namespace Database\Factories\Organization;
 
 use App\Enums\DepartmentTypeEnum;
-use App\Models\Lookups\Department;
+use App\Models\Organization\Department;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

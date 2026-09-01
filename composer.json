@@ -67,6 +67,11 @@
         "phpstan": [
             "./vendor/bin/phpstan analyse --memory-limit=1024M"
         ],
+        "essentials": [
+             "pint --parallel",
+             "./vendor/bin/rector",
+            "./vendor/bin/phpstan analyse --memory-limit=1024M"
+        ],
         "dev:ssr": [
             "npm run build:ssr",
             "Composer\\Config::disableProcessTimeout",

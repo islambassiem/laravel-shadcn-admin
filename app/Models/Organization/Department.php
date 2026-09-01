@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Models\Lookups;
+namespace App\Models\Organization;
 
 use App\Concerns\UserStamp;
 use App\Enums\DepartmentTypeEnum;
-use Database\Factories\Lookups\DepartmentFactory;
+use Database\Factories\Organization\DepartmentFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Table;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
