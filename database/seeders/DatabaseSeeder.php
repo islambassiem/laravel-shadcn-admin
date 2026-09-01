@@ -15,8 +15,8 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-            LookupTypeSeeder::class,
-            LookupValueSeeder::class,
+            SystemLookupTypeSeeder::class,
+            SystemLookupValueSeeder::class,
             DepartmentSeeder::class,
             CountrySeeder::class,
             EmployeeCategorySeeder::class,
@@ -24,6 +24,8 @@ class DatabaseSeeder extends Seeder
             QualificationSpecialityCategorySeeder::class,
             QualificationSpecialitySeeder::class,
             QualificationIncludedSpecializationSeeder::class,
+            QualificationLookupTypeSeeder::class,
+            QualificationLookupValueSeeder::class,
         ]);
     }
 }

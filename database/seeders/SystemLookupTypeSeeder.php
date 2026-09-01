@@ -7,7 +7,7 @@ namespace Database\Seeders;
 use App\Models\Lookups\LookupType;
 use Illuminate\Database\Seeder;
 
-class LookupTypeSeeder extends Seeder
+class SystemLookupTypeSeeder extends Seeder
 {
     /**
      * Run the database seeds.

@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('lookup_types', function (Blueprint $table): void {
+        Schema::create('system_lookup_types', function (Blueprint $table): void {
             $table->id();
             $table->string('name_en');
             $table->string('name_ar');
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('lookup_types');
+        Schema::dropIfExists('system_lookup_types');
     }
 };

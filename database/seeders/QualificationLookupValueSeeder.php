@@ -2,24 +2,24 @@
 
 namespace Database\Seeders;
 
-use App\Enums\LookupTypeEnum;
+use App\Enums\QualificationLookupTypeEnum;
 use App\Services\DataSeeder;
 use Illuminate\Database\Seeder;
 
-class LookupValueSeeder extends Seeder
+class QualificationLookupValueSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $types = LookupTypeEnum::cases();
+        $types = QualificationLookupTypeEnum::cases();
 
         foreach ($types as $type) {
             $filename = strtolower($type->name).'.json';
             DataSeeder::run(
                 filename: $filename,
-                table: 'lookup_values',
+                table: 'qualifications_lookup_values',
                 lookup_type_id: $type->value
             );
         }

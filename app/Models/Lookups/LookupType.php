@@ -7,6 +7,7 @@ namespace App\Models\Lookups;
 use App\Concerns\UserStamp;
 use Database\Factories\Lookups\LookupTypeFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Database\Eloquent\Attributes\Table;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,6 +17,7 @@ use Illuminate\Database\Eloquent\Model;
     'created_by',
     'updated_by',
 ])]
+#[Table('system_lookup_types')]
 class LookupType extends Model
 {
     /** @use HasFactory<LookupTypeFactory> */
