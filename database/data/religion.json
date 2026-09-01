@@ -1,0 +1,51 @@
+[
+    {
+        "code": "1",
+        "name": {
+            "en": "Islam",
+            "ar": "الإسلام"
+        }
+    },
+    {
+        "code": "2",
+        "name": {
+            "en": "Christianity",
+            "ar": "المسيحية"
+        }
+    },
+    {
+        "code": "3",
+        "name": {
+            "en": "Hinduism",
+            "ar": "الهندوسية"
+        }
+    },
+    {
+        "code": "4",
+        "name": {
+            "en": "Buddhism",
+            "ar": "البوذية"
+        }
+    },
+    {
+        "code": "5",
+        "name": {
+            "en": "Judaism",
+            "ar": "اليهودية"
+        }
+    },
+    {
+        "code": "6",
+        "name": {
+            "en": "Sikhism",
+            "ar": "السيخية"
+        }
+    },
+    {
+        "code": "7",
+        "name": {
+            "en": "Other",
+            "ar": "أخرى"
+        }
+    }
+]

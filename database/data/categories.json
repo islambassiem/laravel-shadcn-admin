@@ -1,0 +1,72 @@
+[
+  {
+    "code": "1",
+    "name": {
+      "en": "Faculty Staff",
+      "ar": "عضو هيئة تدريس"
+    }
+  },
+  {
+    "code": "2",
+    "name": {
+      "en": "Lab Technician",
+      "ar": "فني مختبر"
+    }
+  },
+  {
+    "code": "3",
+    "name": {
+      "en": "Admin",
+      "ar": "إداري"
+    }
+  },
+  {
+    "code": "4",
+    "name": {
+      "en": "Shining Horizons Dental Centre",
+      "ar": "مجمع الآفاق لطب الأسنان"
+    }
+  },
+  {
+    "code": "5",
+    "name": {
+      "en": "Maintenance",
+      "ar": "الصيانة"
+    }
+  },
+  {
+    "code": "6",
+    "name": {
+      "en": "Driver",
+      "ar": "سائق"
+    }
+  },
+  {
+    "code": "7",
+    "name": {
+      "en": "Cleaner",
+      "ar": "عامل نظافة"
+    }
+  },
+  {
+    "code": "8",
+    "name": {
+      "en": "Saudization",
+      "ar": "السعودة"
+    }
+  },
+  {
+    "code": "9",
+    "name": {
+      "en": "Consultant",
+      "ar": "مستشار"
+    }
+  },
+  {
+    "code": "10",
+    "name": {
+      "en": "Fitness Trainer",
+      "ar": "مدرب لياقة بدنية"
+    }
+  }
+]
