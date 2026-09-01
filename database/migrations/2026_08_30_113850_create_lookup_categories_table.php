@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('lookup_categories', function (Blueprint $table) {
+        Schema::create('lookup_categories', function (Blueprint $table): void {
             $table->id();
             $table->json('name');
             $table->string('code')->nullable()->unique();

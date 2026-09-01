@@ -20,7 +20,7 @@ use Spatie\Translatable\HasTranslations;
 #[Table('lookup_categories')]
 class Category extends Model
 {
-    /** @use HasFactory<\Database\Factories\Employees\CategoryFactory> */
+    /** @use HasFactory<CategoryFactory> */
     use HasFactory;
 
     use HasTranslations;

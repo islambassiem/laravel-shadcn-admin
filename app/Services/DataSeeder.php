@@ -29,6 +29,7 @@ class DataSeeder
             if ($lookup_type_id) {
                 $data['lookup_type_id'] = $lookup_type_id;
             }
+
             DB::table($table)->insert($data);
         }
     }

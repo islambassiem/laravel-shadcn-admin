@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Factories\Employees;
 
 use App\Enums\LookupTypeEnum;
@@ -7,7 +9,6 @@ use App\Models\Employees\Category;
 use App\Models\Employees\Employee;
 use App\Models\Lookups\Country;
 use App\Models\Lookups\Department;
-use App\Models\Lookups\LookupType;
 use App\Models\Lookups\LookupValue;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;

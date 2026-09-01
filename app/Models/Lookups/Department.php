@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models\Lookups;
 
 use App\Concerns\UserStamp;
@@ -35,7 +37,7 @@ class Department extends Model
     /** @var array<string> */
     public array $translatable = ['name'];
 
-    public function casts(): array
+    protected function casts(): array
     {
         return [
             'name' => 'array',

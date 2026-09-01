@@ -3,12 +3,8 @@
 namespace Database\Seeders;
 
 use App\Enums\LookupTypeEnum;
-use App\Models\Lookups\LookupValue;
 use App\Services\DataSeeder;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\File;
 
 class LookupValueSeeder extends Seeder
 {

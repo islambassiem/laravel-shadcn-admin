@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Factories\Lookups;
 
 use App\Enums\DepartmentTypeEnum;

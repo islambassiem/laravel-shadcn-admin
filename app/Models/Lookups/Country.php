@@ -1,8 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models\Lookups;
 
 use App\Concerns\UserStamp;
+use Database\Factories\Lookups\CountryFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Table;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -20,7 +23,7 @@ use Illuminate\Database\Eloquent\Model;
 #[Table('lookup_countries')]
 class Country extends Model
 {
-    /** @use HasFactory<\Database\Factories\Lookups\CountryFactory> */
+    /** @use HasFactory<CountryFactory> */
     use HasFactory;
 
     /** @use UserStamp<Country> */
