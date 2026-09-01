@@ -20,10 +20,8 @@ class LookupTypeFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => [
-                'ar' => fake('ar')->word(),
-                'en' => fake()->word(),
-            ],
+            'name_ar' => fake('ar_SA')->word(),
+            'name_en' => fake()->word(),
             'code' => fake()->unique()->numberBetween(1, 10000000000000),
             'sort_order' => fake()->numberBetween(1, 100),
         ];

@@ -23,10 +23,8 @@ class DepartmentFactory extends Factory
         $types = DepartmentTypeEnum::cases();
 
         return [
-            'name' => [
-                'ar' => fake('ar')->text(30),
-                'en' => fake()->text(30),
-            ],
+            'name_ar' => fake('ar_SA')->text(30),
+            'name_en' => fake()->text(30),
             'code' => fake()->unique()->numberBetween(1, 10000000000000),
             'type' => $types[array_rand($types)],
             'is_active' => (bool) random_int(0, 1),

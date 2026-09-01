@@ -30,10 +30,10 @@ class EmployeeFactory extends Factory
             'head_id' => null,
             'employee_code' => fake()->unique()->regexify('50[01][0-9]{3}'),
 
-            'first_name_ar' => fake('ar')->firstName(),
-            'middle_name_ar' => fake()->randomElement([null, fake('ar')->firstName()]),
-            'third_name_ar' => fake()->randomElement([null, fake('ar')->firstName()]),
-            'last_name_ar' => fake('ar')->lastName(),
+            'first_name_ar' => fake('ar_SA')->firstName(),
+            'middle_name_ar' => fake()->randomElement([null, fake('ar_SA')->firstName()]),
+            'third_name_ar' => fake()->randomElement([null, fake('ar_SA')->firstName()]),
+            'last_name_ar' => fake('ar_SA')->lastName(),
 
             'first_name_en' => fake()->firstName(),
             'middle_name_en' => fake()->randomElement([null, fake()->firstName()]),

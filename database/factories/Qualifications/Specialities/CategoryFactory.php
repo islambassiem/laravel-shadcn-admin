@@ -22,10 +22,8 @@ class CategoryFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => [
-                'en' => fake()->word(),
-                'ar' => fake('ar_SA')->word(),
-            ],
+            'name_en' => fake()->word(),
+            'name_ar' => fake('ar_SA')->word(),
             'code' => fake()->unique()->numberBetween(1, 100000000),
             'order' => fake()->numberBetween(1, 100),
         ];

@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('lookup_countries', function (Blueprint $table): void {
             $table->id();
-            $table->json('name');
+            $table->json('name_en');
+            $table->json('name_ar');
             $table->string('code')->unique();
             $table->integer('order')->default(0);
             $table->string('lang', 2)->default('en');

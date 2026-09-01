@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Table;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Translatable\HasTranslations;
 
 #[Fillable([
     'name',
@@ -23,13 +22,8 @@ class Category extends Model
     /** @use HasFactory<CategoryFactory> */
     use HasFactory;
 
-    use HasTranslations;
-
     /** @use UserStamp<Category> */
     use UserStamp;
-
-    /** @var array<string> */
-    public array $translatable = ['name'];
 
     protected static function newFactory(): CategoryFactory
     {

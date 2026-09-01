@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('lookup_departments', function (Blueprint $table): void {
             $table->id();
-            $table->json('name');
+            $table->string('name_en');
+            $table->string('name_ar');
             $table->string('code')->nullable();
             $table->string('type')->nullable();
             $table->boolean('is_active')->default(true);

@@ -21,10 +21,8 @@ class LookupValueFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => [
-                'en' => fake()->word(),
-                'ar' => fake('ar')->word(),
-            ],
+            'name_en' => fake()->word(),
+            'name_ar' => fake('ar_SA')->word(),
             'code' => (string) fake()->numberBetween(),
             'lookup_type_id' => LookupType::factory(),
         ];

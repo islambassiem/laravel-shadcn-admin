@@ -22,7 +22,7 @@ class SpecialityFactory extends Factory
     {
         return [
             'name_en' => fake()->name(),
-            'name_ar' => fake()->name(),
+            'name_ar' => fake('ar_SA')->name(),
             'code' => fake()->unique()->numberBetween(1, 100000000),
             'category_id' => Category::factory(),
         ];

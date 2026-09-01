@@ -12,7 +12,6 @@ use Illuminate\Database\Eloquent\Attributes\Scope;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Translatable\HasTranslations;
 
 #[Fillable([
     'name',
@@ -28,13 +27,8 @@ class LookupValue extends Model
     /** @use HasFactory<LookupValueFactory> */
     use HasFactory;
 
-    use HasTranslations;
-
     /** @use UserStamp<LookupValue> */
     use UserStamp;
-
-    /** @var array<string> */
-    public array $translatable = ['name'];
 
     /**
      * @param  Builder<LookupValue>  $query

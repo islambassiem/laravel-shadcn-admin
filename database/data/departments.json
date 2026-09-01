@@ -1,212 +1,152 @@
 [
   {
     "code": "KJ03",
-    "name": {
-      "en": "Biomedical Technology",
-      "ar": "التكنولوجيا الطبية الحيوية"
-    }
+    "name_en": "Biomedical Technology",
+    "name_ar": "التكنولوجيا الطبية الحيوية"
   },
   {
     "code": "PA89",
-    "name": {
-      "en": "CEO Office",
-      "ar": "مكتب الرئيس التنفيذي"
-    }
+    "name_en": "CEO Office",
+    "name_ar": "مكتب الرئيس التنفيذي"
   },
   {
     "code": "KE03",
-    "name": {
-      "en": "Clinical Laboratory Sciences",
-      "ar": "علوم المختبرات الاكلينيكية"
-    }
+    "name_en": "Clinical Laboratory Sciences",
+    "name_ar": "علوم المختبرات الاكلينيكية"
   },
   {
     "code": "PA89",
-    "name": {
-      "en": "Dean Office",
-      "ar": "مكتب العميد"
-    }
+    "name_en": "Dean Office",
+    "name_ar": "مكتب العميد"
   },
   {
     "code": "KC29",
-    "name": {
-      "en": "Dental Health Care",
-      "ar": "رعاية صحة الفم والاسنان"
-    }
+    "name_en": "Dental Health Care",
+    "name_ar": "رعاية صحة الفم والاسنان"
   },
   {
     "code": "KI05",
-    "name": {
-      "en": "Emergency Medical Services",
-      "ar": "الطوارئ الطبية والعناية المركزة"
-    }
+    "name_en": "Emergency Medical Services",
+    "name_ar": "الطوارئ الطبية والعناية المركزة"
   },
   {
     "code": "CF29",
-    "name": {
-      "en": "Finance",
-      "ar": "المالية"
-    }
+    "name_en": "Finance",
+    "name_ar": "المالية"
   },
   {
     "code": "CB07",
-    "name": {
-      "en": "Human Resources",
-      "ar": "الموارد البشرية"
-    }
+    "name_en": "Human Resources",
+    "name_ar": "الموارد البشرية"
   },
   {
     "code": "BB05",
-    "name": {
-      "en": "Library",
-      "ar": "المكتبة"
-    }
+    "name_en": "Library",
+    "name_ar": "المكتبة"
   },
   {
     "code": "HF07",
-    "name": {
-      "en": "Nuclear Medicine Technology",
-      "ar": "تقنية الطب النووي"
-    }
+    "name_en": "Nuclear Medicine Technology",
+    "name_ar": "تقنية الطب النووي"
   },
   {
     "code": "KL01",
-    "name": {
-      "en": "Nursing Science",
-      "ar": "علوم التمريض"
-    }
+    "name_en": "Nursing Science",
+    "name_ar": "علوم التمريض"
   },
   {
     "code": "PA41",
-    "name": {
-      "en": "Purchasing",
-      "ar": "المشتريات"
-    }
+    "name_en": "Purchasing",
+    "name_ar": "المشتريات"
   },
   {
     "code": "PA85",
-    "name": {
-      "en": "Quality & Accreditation",
-      "ar": "الجودة والاعتماد"
-    }
+    "name_en": "Quality & Accreditation",
+    "name_ar": "الجودة والاعتماد"
   },
   {
     "code": "KF01",
-    "name": {
-      "en": "Radiological Science",
-      "ar": "العلوم الاشعاعية"
-    }
+    "name_en": "Radiological Science",
+    "name_ar": "العلوم الاشعاعية"
   },
   {
     "code": "PA89",
-    "name": {
-      "en": "Registration",
-      "ar": "القبول والتسجيل"
-    }
+    "name_en": "Registration",
+    "name_ar": "القبول والتسجيل"
   },
   {
     "code": "KL73",
-    "name": {
-      "en": "Respiratory Therapy",
-      "ar": "العلاج التنفسي"
-    }
+    "name_en": "Respiratory Therapy",
+    "name_ar": "العلاج التنفسي"
   },
   {
     "code": "PA89",
-    "name": {
-      "en": "Saudization",
-      "ar": "السعودة"
-    }
+    "name_en": "Saudization",
+    "name_ar": "السعودة"
   },
   {
     "code": "PA41",
-    "name": {
-      "en": "Services",
-      "ar": "الخدمات المساندة"
-    }
+    "name_en": "Services",
+    "name_ar": "الخدمات المساندة"
   },
   {
     "code": "19",
-    "name": {
-      "en": "Shining",
-      "ar": "مجمع الآفاق"
-    }
+    "name_en": "Shining",
+    "name_ar": "مجمع الآفاق"
   },
   {
     "code": "PA79",
-    "name": {
-      "en": "Information Technology",
-      "ar": "تكنولوجيا المعلومات"
-    }
+    "name_en": "Information Technology",
+    "name_ar": "تكنولوجيا المعلومات"
   },
   {
     "code": "21",
-    "name": {
-      "en": "Universities Sports Union",
-      "ar": "اتحاد الجامعات الرياضي"
-    }
+    "name_en": "Universities Sports Union",
+    "name_ar": "اتحاد الجامعات الرياضي"
   },
   {
     "code": "PA01",
-    "name": {
-      "en": "Common First Year",
-      "ar": "السنة الأولى المشتركة"
-    }
+    "name_en": "Common First Year",
+    "name_ar": "السنة الأولى المشتركة"
   },
   {
     "code": "CI07",
-    "name": {
-      "en": "Health Adminstration",
-      "ar": "الإدارة الصحية"
-    }
+    "name_en": "Health Adminstration",
+    "name_ar": "الإدارة الصحية"
   },
   {
     "code": "CI39",
-    "name": {
-      "en": "Health Informatics",
-      "ar": "المعلوماتية الصحية"
-    }
+    "name_en": "Health Informatics",
+    "name_ar": "المعلوماتية الصحية"
   },
   {
     "code": "PA41",
-    "name": {
-      "en": "Other",
-      "ar": "أخرى"
-    }
+    "name_en": "Other",
+    "name_ar": "أخرى"
   },
   {
     "code": "PA87",
-    "name": {
-      "en": "Community Services",
-      "ar": "الخدمة المجتمعية"
-    }
+    "name_en": "Community Services",
+    "name_ar": "الخدمة المجتمعية"
   },
   {
     "code": "PA87",
-    "name": {
-      "en": "Public Relationship",
-      "ar": "الإدارة والعلاقات العامة"
-    }
+    "name_en": "Public Relationship",
+    "name_ar": "الإدارة والعلاقات العامة"
   },
   {
     "code": "PA87",
-    "name": {
-      "en": "Marketing",
-      "ar": "التسويق"
-    }
+    "name_en": "Marketing",
+    "name_ar": "التسويق"
   },
   {
     "code": "PA87",
-    "name": {
-      "en": "Secretary",
-      "ar": "السكرتارية"
-    }
+    "name_en": "Secretary",
+    "name_ar": "السكرتارية"
   },
   {
     "code": "PA87",
-    "name": {
-      "en": "Follow up",
-      "ar": "المتابعة"
-    }
+    "name_en": "Follow up",
+    "name_ar": "المتابعة"
   }
 ]

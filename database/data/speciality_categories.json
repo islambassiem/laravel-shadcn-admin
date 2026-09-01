@@ -1,128 +1,92 @@
 [
   {
     "code": "1",
-    "name": {
-      "en": "Islamic and Sharia Studies Specializations",
-      "ar": "تخصصات الدراسات الإسلامية والشرعية"
-    }
+    "name_en": "Islamic and Sharia Studies Specializations",
+    "name_ar": "تخصصات الدراسات الإسلامية والشرعية"
   },
   {
     "code": "2",
-    "name": {
-      "en": "Arts, Social Sciences, and Humanities Specializations",
-      "ar": "تخصصات الآداب والعلوم الاجتماعية والإنسانية"
-    }
+    "name_en": "Arts, Social Sciences, and Humanities Specializations",
+    "name_ar": "تخصصات الآداب والعلوم الاجتماعية والإنسانية"
   },
   {
     "code": "3",
-    "name": {
-      "en": "Economics and Management Specializations",
-      "ar": "تخصصات مجموعة الاقتصاد والإدارة"
-    }
+    "name_en": "Economics and Management Specializations",
+    "name_ar": "تخصصات مجموعة الاقتصاد والإدارة"
   },
   {
     "code": "4",
-    "name": {
-      "en": "Education and Teaching Specializations",
-      "ar": "تخصصات مجموعة التربية والتعليم"
-    }
+    "name_en": "Education and Teaching Specializations",
+    "name_ar": "تخصصات مجموعة التربية والتعليم"
   },
   {
     "code": "5",
-    "name": {
-      "en": "Arts and Home Economics Specializations",
-      "ar": "تخصصات الفنون والاقتصاد المنزلي"
-    }
+    "name_en": "Arts and Home Economics Specializations",
+    "name_ar": "تخصصات الفنون والاقتصاد المنزلي"
   },
   {
     "code": "6",
-    "name": {
-      "en": "Natural Sciences Specializations",
-      "ar": "تخصصات مجموعة العلوم الطبيعية"
-    }
+    "name_en": "Natural Sciences Specializations",
+    "name_ar": "تخصصات مجموعة العلوم الطبيعية"
   },
   {
     "code": "7",
-    "name": {
-      "en": "Engineering Sciences Specializations",
-      "ar": "تخصصات العلوم الهندسية"
-    }
+    "name_en": "Engineering Sciences Specializations",
+    "name_ar": "تخصصات العلوم الهندسية"
   },
   {
     "code": "8",
-    "name": {
-      "en": "Human Medicine Specializations",
-      "ar": "تخصصات الطب البشرى"
-    }
+    "name_en": "Human Medicine Specializations",
+    "name_ar": "تخصصات الطب البشرى"
   },
   {
     "code": "9",
-    "name": {
-      "en": "Dental Medicine Specializations",
-      "ar": "تخصصات طب الأسنان"
-    }
+    "name_en": "Dental Medicine Specializations",
+    "name_ar": "تخصصات طب الأسنان"
   },
   {
     "code": "10",
-    "name": {
-      "en": "Pharmaceutical Sciences Specializations",
-      "ar": "تخصصات العلوم الصيدلية"
-    }
+    "name_en": "Pharmaceutical Sciences Specializations",
+    "name_ar": "تخصصات العلوم الصيدلية"
   },
   {
     "code": "11",
-    "name": {
-      "en": "Applied Medical Sciences Specializations",
-      "ar": "تخصصات العلوم الطبية التطبيقية"
-    }
+    "name_en": "Applied Medical Sciences Specializations",
+    "name_ar": "تخصصات العلوم الطبية التطبيقية"
   },
   {
     "code": "12",
-    "name": {
-      "en": "Law and Political Science Specializations",
-      "ar": "تخصصات القانون والعلوم السياسية"
-    }
+    "name_en": "Law and Political Science Specializations",
+    "name_ar": "تخصصات القانون والعلوم السياسية"
   },
   {
     "code": "13",
-    "name": {
-      "en": "Agricultural, Food, and Environmental Sciences Specializations",
-      "ar": "تخصصات العلوم الزراعية والغذائية والبيئية"
-    }
+    "name_en": "Agricultural, Food, and Environmental Sciences Specializations",
+    "name_ar": "تخصصات العلوم الزراعية والغذائية والبيئية"
   },
   {
     "code": "14",
-    "name": {
-      "en": "Computer Science and Information Technology Specializations",
-      "ar": "تخصصات الحاسب و تقنية المعلومات"
-    }
+    "name_en": "Computer Science and Information Technology Specializations",
+    "name_ar": "تخصصات الحاسب و تقنية المعلومات"
   },
   {
     "code": "15",
-    "name": {
-      "en": "Technical and Industrial Colleges Specializations",
-      "ar": "تخصصات الكليات التقنية والصناعية"
-    }
+    "name_en": "Technical and Industrial Colleges Specializations",
+    "name_ar": "تخصصات الكليات التقنية والصناعية"
   },
   {
     "code": "16",
-    "name": {
-      "en": "Other Specializations",
-      "ar": "تخصصات أخرى"
-    }
+    "name_en": "Other Specializations",
+    "name_ar": "تخصصات أخرى"
   },
   {
     "code": "17",
-    "name": {
-      "en": "Security and Military Services Specializations",
-      "ar": "تخصصات الخدمات الأمنية والعسكرية"
-    }
+    "name_en": "Security and Military Services Specializations",
+    "name_ar": "تخصصات الخدمات الأمنية والعسكرية"
   },
   {
     "code": "18",
-    "name": {
-      "en": "Training Centers Specializations",
-      "ar": "تخصصات مراكز التدريب"
-    }
+    "name_en": "Training Centers Specializations",
+    "name_ar": "تخصصات مراكز التدريب"
   }
 ]

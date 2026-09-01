@@ -16,34 +16,26 @@ class LookupTypeSeeder extends Seeder
     {
         $types = [
             [
-                'name' => [
-                    'ar' => 'الجنس',
-                    'en' => 'Gender',
-                ],
+                'name_ar' => 'الجنس',
+                'name_en' => 'Gender',
                 'code' => 'gender',
                 'sort_order' => 1,
             ],
             [
-                'name' => [
-                    'ar' => 'الحالة الاجتماعية',
-                    'en' => 'Marital Status',
-                ],
+                'name_ar' => 'الحالة الاجتماعية',
+                'name_en' => 'Marital Status',
                 'code' => 'marital_status',
                 'sort_order' => 2,
             ],
             [
-                'name' => [
-                    'ar' => 'الديانة',
-                    'en' => 'Religion',
-                ],
+                'name_ar' => 'الديانة',
+                'name_en' => 'Religion',
                 'code' => 'religion',
                 'sort_order' => 3,
             ],
             [
-                'name' => [
-                    'ar' => 'الاحتاجات الخاصة',
-                    'en' => 'Special Needs',
-                ],
+                'name_ar' => 'الاحتاجات الخاصة',
+                'name_en' => 'Special Needs',
                 'code' => 'employee_special_needs',
                 'sort_order' => 4,
             ],

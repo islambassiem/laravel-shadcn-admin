@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('lookup_categories', function (Blueprint $table): void {
             $table->id();
-            $table->json('name');
+            $table->string('name_en');
+            $table->string('name_ar');
             $table->string('code')->nullable()->unique();
             $table->foreignId('parent_id')->nullable()->constrained('lookup_categories');
             $table->foreignId('created_by')->nullable()->constrained('users');

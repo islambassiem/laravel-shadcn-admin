@@ -28,12 +28,4 @@ class Country extends Model
 
     /** @use UserStamp<Country> */
     use UserStamp;
-
-    protected function casts(): array
-    {
-        return [
-            'name' => 'array',
-            'is_active' => 'boolean',
-        ];
-    }
 }

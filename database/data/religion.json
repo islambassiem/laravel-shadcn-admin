@@ -1,51 +1,37 @@
 [
     {
         "code": "1",
-        "name": {
-            "en": "Islam",
-            "ar": "الإسلام"
-        }
+        "name_en": "Islam",
+        "name_ar": "الإسلام"
     },
     {
         "code": "2",
-        "name": {
-            "en": "Christianity",
-            "ar": "المسيحية"
-        }
+        "name_en": "Christianity",
+        "name_ar": "المسيحية"
     },
     {
         "code": "3",
-        "name": {
-            "en": "Hinduism",
-            "ar": "الهندوسية"
-        }
+        "name_en": "Hinduism",
+        "name_ar": "الهندوسية"
     },
     {
         "code": "4",
-        "name": {
-            "en": "Buddhism",
-            "ar": "البوذية"
-        }
+        "name_en": "Buddhism",
+        "name_ar": "البوذية"
     },
     {
         "code": "5",
-        "name": {
-            "en": "Judaism",
-            "ar": "اليهودية"
-        }
+        "name_en": "Judaism",
+        "name_ar": "اليهودية"
     },
     {
         "code": "6",
-        "name": {
-            "en": "Sikhism",
-            "ar": "السيخية"
-        }
+        "name_en": "Sikhism",
+        "name_ar": "السيخية"
     },
     {
         "code": "7",
-        "name": {
-            "en": "Other",
-            "ar": "أخرى"
-        }
+        "name_en": "Other",
+        "name_ar": "أخرى"
     }
 ]
