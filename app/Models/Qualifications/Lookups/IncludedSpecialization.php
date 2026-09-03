@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Models\Qualifications\Specialities;
+namespace App\Models\Qualifications\Lookups;
 
 use App\Concerns\UserStamp;
-use Database\Factories\Qualifications\Specialities\IncludedSpecializationFactory;
+use Database\Factories\Qualifications\Lookups\IncludedSpecializationFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Table;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

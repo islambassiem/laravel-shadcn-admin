@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Database\Factories\Qualifications\Specialities;
+namespace Database\Factories\Qualifications\Lookups;
 
-use App\Models\Qualifications\Specialities\IncludedSpecialization;
+use App\Models\Qualifications\Lookups\IncludedSpecialization;
 use Illuminate\Database\Eloquent\Factories\Attributes\UseModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

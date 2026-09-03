@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             QualificationIncludedSpecializationSeeder::class,
             QualificationLookupTypeSeeder::class,
             QualificationLookupValueSeeder::class,
+            QualificationSeeder::class,
         ]);
     }
 }

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Models\Qualifications\Specialities;
+namespace App\Models\Qualifications\Lookups;
 
 use App\Concerns\UserStamp;
-use Database\Factories\Qualifications\Specialities\SpecialityFactory;
+use Database\Factories\Qualifications\Lookups\SpecialityFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Table;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Model;
     'created_by',
     'updated_by',
 ])]
-#[Table('qualifications_specialities_specialities')]
+#[Table('qualifications_specialities')]
 class Speciality extends Model
 {
     /** @use HasFactory<SpecialityFactory> */

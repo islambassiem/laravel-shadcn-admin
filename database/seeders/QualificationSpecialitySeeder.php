@@ -37,7 +37,7 @@ class QualificationSpecialitySeeder extends Seeder
                 'updated_at' => now(),
             ];
 
-            DB::table('qualifications_specialities_specialities')->insert($data);
+            DB::table('qualifications_specialities')->insert($data);
         }
     }
 }

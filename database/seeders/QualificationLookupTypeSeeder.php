@@ -27,6 +27,24 @@ class QualificationLookupTypeSeeder extends Seeder
                 'code' => 'educational_sublevel',
                 'sort_order' => 2,
             ],
+            [
+                'name_ar' => 'التقييم',
+                'name_en' => 'Rating',
+                'code' => 'ratings',
+                'sort_order' => 3,
+            ],
+            [
+                'name_ar' => 'أنواع المعدل التراكمي',
+                'name_en' => 'GPA Types',
+                'code' => 'gpa_types',
+                'sort_order' => 4,
+            ],
+            [
+                'name_ar' => 'أنواع الدراسة',
+                'name_en' => 'Study Types',
+                'code' => 'study_types',
+                'sort_order' => 5,
+            ],
         ];
 
         foreach ($types as $type) {

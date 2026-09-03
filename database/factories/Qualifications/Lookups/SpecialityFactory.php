@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Database\Factories\Qualifications\Specialities;
+namespace Database\Factories\Qualifications\Lookups;
 
-use App\Models\Qualifications\Specialities\Category;
-use App\Models\Qualifications\Specialities\Speciality;
+use App\Models\Qualifications\Lookups\Category;
+use App\Models\Qualifications\Lookups\Speciality;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Factories\Qualifications\Lookups;
 
+use App\Models\Qualifications\Lookups\LookupType;
 use App\Models\Qualifications\Lookups\LookupValue;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -20,7 +21,10 @@ class LookupValueFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name_en' => fake()->word(),
+            'name_ar' => fake('ar_SA')->word(),
+            'code' => (string) fake()->numberBetween(),
+            'lookup_type_id' => LookupType::factory(),
         ];
     }
 }
