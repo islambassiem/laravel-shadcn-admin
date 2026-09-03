@@ -39,6 +39,12 @@ class SystemLookupTypeSeeder extends Seeder
                 'code' => 'employee_special_needs',
                 'sort_order' => 4,
             ],
+            [
+                'name_ar' => 'نوع الهوية',
+                'name_en' => 'Identity Type',
+                'code' => 'identity_type',
+                'sort_order' => 5,
+            ],
         ];
 
         foreach ($types as $type) {

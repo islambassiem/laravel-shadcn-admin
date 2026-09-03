@@ -13,4 +13,6 @@ enum LookupTypeEnum: int
     case RELIGION = 3;
 
     case SPECIAL_NEED = 4;
+
+    case IDENTITY_TYPES = 5;
 }
