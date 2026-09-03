@@ -5,13 +5,12 @@ declare(strict_types=1);
 namespace App\Models\Qualifications\Lookups;
 
 use App\Concerns\UserStamp;
-use Database\Factories\Qualifications\Lookups\CategoryFactory;
+use Database\Factories\Qualifications\Lookups\SpecialityCategoryFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Table;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-// SA29 3040 0108 0681 7705 0014
 #[Fillable([
     'name_en',
     'name_ar',
@@ -20,12 +19,12 @@ use Illuminate\Database\Eloquent\Model;
     'created_by',
     'updated_by',
 ])]
-#[Table('qualifications_categories')]
-class Category extends Model
+#[Table('qualifications_specialities_categories')]
+class SpecialityCategory extends Model
 {
-    /** @use HasFactory<CategoryFactory> */
+    /** @use HasFactory<SpecialityCategoryFactory> */
     use HasFactory;
 
-    /** @use UserStamp<Category> */
+    /** @use UserStamp<SpecialityCategory> */
     use UserStamp;
 }

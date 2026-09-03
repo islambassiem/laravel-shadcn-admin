@@ -16,7 +16,7 @@ class QualificationSpecialityCategorySeeder extends Seeder
     {
         DataSeeder::run(
             filename: 'speciality_categories.json',
-            table: 'qualifications_categories'
+            table: 'qualifications_specialities_categories'
         );
     }
 }

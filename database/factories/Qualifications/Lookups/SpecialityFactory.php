@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace Database\Factories\Qualifications\Lookups;
 
-use App\Models\Qualifications\Lookups\Category;
+
 use App\Models\Qualifications\Lookups\Speciality;
+use App\Models\Qualifications\Lookups\SpecialityCategory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -24,7 +25,7 @@ class SpecialityFactory extends Factory
             'name_en' => fake()->name(),
             'name_ar' => fake('ar_SA')->name(),
             'code' => fake()->unique()->numberBetween(1, 100000000),
-            'category_id' => Category::factory(),
+            'category_id' => SpecialityCategory::factory(),
         ];
     }
 }

@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace Database\Factories\Qualifications\Lookups;
 
-use App\Models\Qualifications\Lookups\Category;
+use App\Models\Qualifications\Lookups\SpecialityCategory;
 use Illuminate\Database\Eloquent\Attributes\Table;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Category>
+ * @extends Factory<SpecialityCategory>
  */
 #[Table('qualifications_specialities_categories')]
-class CategoryFactory extends Factory
+class SpecialityCategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
