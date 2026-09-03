@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Database\Factories\Qualifications\Lookups;
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 use App\Models\Qualifications\Lookups\Speciality;
 use App\Models\Qualifications\Lookups\SpecialityCategory;
 use Illuminate\Database\Eloquent\Factories\Factory;
