@@ -45,6 +45,24 @@ class SystemLookupTypeSeeder extends Seeder
                 'code' => 'identity_type',
                 'sort_order' => 5,
             ],
+            [
+                'name_ar' => 'المراتب الأكاديمية',
+                'name_en' => 'Academic Rank',
+                'code' => 'academic_rank',
+                'sort_order' => 6,
+            ],
+            [
+                'name_ar' => 'المراتب الوظيفية',
+                'name_en' => 'Administrative Rank',
+                'code' => 'administrative_rank',
+                'sort_order' => 7,
+            ],
+            [
+                'name_ar' => 'أنواع التعيين',
+                'name_en' => 'Appointment Types',
+                'code' => 'appointment_type',
+                'sort_order' => 8,
+            ],
         ];
 
         foreach ($types as $type) {

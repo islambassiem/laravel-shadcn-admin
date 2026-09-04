@@ -15,4 +15,11 @@ enum LookupTypeEnum: int
     case SPECIAL_NEED = 4;
 
     case IDENTITY_TYPES = 5;
+
+    case ACADEMIC_RANKS = 6;
+
+    case ADMIN_RANKS = 7;
+
+    case APPOINTMENT_TYPES = 8;
+
 }
