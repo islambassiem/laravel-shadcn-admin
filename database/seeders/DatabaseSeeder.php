@@ -30,6 +30,7 @@ class DatabaseSeeder extends Seeder
             QualificationSeeder::class,
             JobTitleSeeder::class,
             ManagerialRoleSeeder::class,
+            EmployeeJobTitleSeeder::class,
         ]);
     }
 }
