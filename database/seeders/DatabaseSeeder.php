@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
             QualificationLookupTypeSeeder::class,
             QualificationLookupValueSeeder::class,
             QualificationSeeder::class,
+            JobTitleSeeder::class,
         ]);
     }
 }
