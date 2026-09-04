@@ -33,6 +33,7 @@ class DatabaseSeeder extends Seeder
             EmployeeJobTitleSeeder::class,
             EmployeeManagerialRoleSeeder::class,
             EmployeeAdressSeeder::class,
+            EmployeeDependentSeeder::class,
         ]);
     }
 }

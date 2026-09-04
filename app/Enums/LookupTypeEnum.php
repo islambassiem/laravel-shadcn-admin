@@ -22,4 +22,6 @@ enum LookupTypeEnum: int
 
     case APPOINTMENT_TYPES = 8;
 
+    case FAMILY_RELATIONSHIPS = 9;
+
 }

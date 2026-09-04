@@ -63,6 +63,12 @@ class SystemLookupTypeSeeder extends Seeder
                 'code' => 'appointment_type',
                 'sort_order' => 8,
             ],
+            [
+                'name_ar' => 'العلاقات الأسرية',
+                'name_en' => 'Family Relationships',
+                'code' => 'family_relationships',
+                'sort_order' => 9,
+            ],
         ];
 
         foreach ($types as $type) {
