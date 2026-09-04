@@ -26,7 +26,6 @@ use Illuminate\Database\Eloquent\Model;
     'gpa_type_id',
     'study_type_id',
     'city',
-    'research_type_id',
     'is_authenticated',
     'created_by',
     'updated_by',

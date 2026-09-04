@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
 use App\Enums\LookupTypeEnum;
@@ -15,10 +17,22 @@ class EmployeeDependentSeeder extends Seeder
      */
     public function run(): void
     {
+        $lookups = LookupValue::query()->get(['id', 'lookup_type_id']);
+
+        $employeeIds = Employee::query()->pluck('id');
+        $genderIds = $lookups
+            ->filter(
+                fn ($item): bool => $item->lookup_type_id === LookupTypeEnum::GENDER->value
+            );
+        $relationshipIds = $lookups
+            ->filter(
+                fn ($item): bool => $item->lookup_type_id === LookupTypeEnum::FAMILY_RELATIONSHIPS->value
+            );
+
         EmployeeDependent::factory(100)->create([
-            'employee_id' => fn () => Employee::query()->inRandomOrder()->value('id'),
-            'gender_id' => fn () => LookupValue::query()->where('lookup_type_id', LookupTypeEnum::GENDER->value)->inRandomOrder()->value('id'),
-            'relationship_id' => fn () => LookupValue::query()->where('lookup_type_id', LookupTypeEnum::FAMILY_RELATIONSHIPS->value)->inRandomOrder()->value('id'),
+            'employee_id' => fn () => $employeeIds->random(),
+            'gender_id' => fn () => $genderIds->random(),
+            'relationship_id' => fn () => $relationshipIds->random(),
         ]);
     }
 }

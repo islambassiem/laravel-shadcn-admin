@@ -15,8 +15,10 @@ class EmployeeAdressSeeder extends Seeder
      */
     public function run(): void
     {
-        EmployeeAdress::factory(100)->create([
-            'employee_id' => fn () => Employee::query()->inRandomOrder()->value('id'),
+        $employeeIds = Employee::query()->pluck('id');
+
+        EmployeeAdress::factory($employeeIds->count())->create([
+            'employee_id' => fn () => $employeeIds->pop(),
         ]);
     }
 }

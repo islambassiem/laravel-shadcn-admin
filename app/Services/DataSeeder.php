@@ -10,15 +10,15 @@ class DataSeeder
     public static function run(
         string $filename,
         string $table,
-        ?int $lookup_type_id = null,
-        ?int $category_id = null): void
+        ?int $lookup_type_id = null): void
     {
         $fileContent = File::get(database_path("data/$filename"));
 
         /** @var array<int, array{
          *     code: string,
          *     name_en: string,
-         *     name_ar: string
+         *     name_ar: string,
+         *     category_id: int|null
          * }> $values
          */
         $values = json_decode($fileContent, true);
@@ -36,8 +36,8 @@ class DataSeeder
                 $data['lookup_type_id'] = $lookup_type_id;
             }
 
-            if ($category_id) {
-                $data['category_id'] = $category_id;
+            if (isset($value['category_id'])) {
+                $data['category_id'] = $value['category_id'];
             }
 
             DB::table($table)->insert($data);

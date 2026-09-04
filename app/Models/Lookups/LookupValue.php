@@ -14,6 +14,9 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ *  @property-read int $lookup_type_id
+ */
 #[Fillable([
     'name',
     'code',
@@ -66,5 +69,23 @@ class LookupValue extends Model
     protected function specialNeeds(Builder $query): void
     {
         $query->where('lookup_type_id', LookupTypeEnum::SPECIAL_NEED->value);
+    }
+
+    /**
+     * @param  Builder<LookupValue>  $query
+     */
+    #[Scope]
+    protected function familyRelationships(Builder $query): void
+    {
+        $query->where('lookup_type_id', LookupTypeEnum::FAMILY_RELATIONSHIPS->value);
+    }
+
+    /**
+     * @param  Builder<LookupValue>  $query
+     */
+    #[Scope]
+    protected function identityTypes(Builder $query): void
+    {
+        $query->where('lookup_type_id', LookupTypeEnum::IDENTITY_TYPES->value);
     }
 }

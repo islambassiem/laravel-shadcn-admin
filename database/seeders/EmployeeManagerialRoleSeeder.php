@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
+use App\Models\Employees\Employee;
 use App\Models\Employees\EmployeeManagerialRole;
+use App\Models\Organization\ManagerialRole;
 use Illuminate\Database\Seeder;
 
 class EmployeeManagerialRoleSeeder extends Seeder
@@ -14,6 +16,12 @@ class EmployeeManagerialRoleSeeder extends Seeder
      */
     public function run(): void
     {
-        EmployeeManagerialRole::factory(10)->create();
+        $employeeIds = Employee::query()->pluck('id');
+        $managerialRoleIds = ManagerialRole::query()->pluck('id');
+
+        EmployeeManagerialRole::factory(10)->create([
+            'employee_id' => fn () => $employeeIds->random(),
+            'managerial_role_id' => fn () => $managerialRoleIds->random(),
+        ]);
     }
 }
