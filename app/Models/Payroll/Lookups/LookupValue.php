@@ -45,4 +45,13 @@ class LookupValue extends Model
     {
         $query->where('lookup_type_id', PayrollLookupTypeEnum::SALARY_REVISION_TYPES->value);
     }
+
+    /**
+     * @param  Builder<LookupValue>  $query
+     */
+    #[Scope]
+    protected function banks(Builder $query): void
+    {
+        $query->where('lookup_type_id', PayrollLookupTypeEnum::BANKS->value);
+    }
 }

@@ -38,6 +38,7 @@ class DatabaseSeeder extends Seeder
             PayrollLookupValueSeeder::class,
             SalaryRevisionSeeder::class,
             EmployeeSalaryComponentSeeder::class,
+            EmployeeBankSeeder::class,
         ]);
     }
 }

@@ -41,4 +41,11 @@ class LookupValueFactory extends Factory
             'lookup_type_id' => PayrollLookupTypeEnum::SALARY_REVISION_TYPES->value,
         ]);
     }
+
+    public function bank(): static
+    {
+        return $this->state([
+            'lookup_type_id' => PayrollLookupTypeEnum::BANKS->value,
+        ]);
+    }
 }

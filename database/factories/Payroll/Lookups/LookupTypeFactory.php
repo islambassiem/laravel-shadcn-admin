@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Database\Factories\Payroll\Lookups;
 
-use App\Enums\PayrollLookupTypeEnum;
 use App\Models\Payroll\Lookups\LookupType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

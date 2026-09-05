@@ -27,6 +27,12 @@ class PayrollLookupTypeSeeder extends Seeder
                 'code' => 'salary_revision_types',
                 'sort_order' => 2,
             ],
+            [
+                'name_en' => 'Banks',
+                'name_ar' => 'البنوك',
+                'code' => 'banks',
+                'sort_order' => 3,
+            ],
         ];
 
         foreach ($types as $type) {
