@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Database\Factories\Employees;
 
-use App\Enums\LookupTypeEnum;
 use App\Models\Employees\Category;
 use App\Models\Employees\Employee;
 use App\Models\Lookups\Country;
@@ -40,15 +39,15 @@ class EmployeeFactory extends Factory
             'third_name_en' => fake()->randomElement([null, fake()->firstName()]),
             'last_name_en' => fake()->lastName(),
 
-            'marital_status_id' => LookupValue::factory()->state(['lookup_type_id' => LookupTypeEnum::MARITAL_STATUS->value]),
-            'religion_id' => LookupValue::factory()->state(['lookup_type_id' => LookupTypeEnum::RELIGION->value]),
-            'special_needs_id' => LookupValue::factory()->state(['lookup_type_id' => LookupTypeEnum::SPECIAL_NEED->value]),
+            'marital_status_id' => LookupValue::factory()->maritalSataus(),
+            'religion_id' => LookupValue::factory()->religion(),
+            'special_needs_id' => LookupValue::factory()->specialNeed(),
 
-            'gender_id' => LookupValue::factory()->state(['lookup_type_id' => LookupTypeEnum::GENDER->value]),
+            'gender_id' => LookupValue::factory()->gender(),
             'category_id' => Category::factory(),
             'department_id' => Department::factory(),
             'nationality_id' => Country::factory(),
-            'place_of_birth_id' => Country::query()->inRandomOrder()->value('id') ?? Country::factory(),
+            'place_of_birth_id' => Country::factory(),
 
             'email' => fake()->unique()->safeEmail(),
             'phone' => fake()->numerify('5########'),

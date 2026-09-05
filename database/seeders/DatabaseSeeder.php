@@ -34,6 +34,10 @@ class DatabaseSeeder extends Seeder
             EmployeeManagerialRoleSeeder::class,
             EmployeeAdressSeeder::class,
             EmployeeDependentSeeder::class,
+            PayrollLookupTypeSeeder::class,
+            PayrollLookupValueSeeder::class,
+            SalaryRevisionSeeder::class,
+            EmployeeSalaryComponentSeeder::class,
         ]);
     }
 }

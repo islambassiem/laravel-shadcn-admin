@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Database\Factories\Qualifications;
 
-use App\Enums\QualificationLookupTypeEnum;
 use App\Models\Employees\Employee;
 use App\Models\Lookups\Country;
 use App\Models\Qualifications\Lookups\IncludedSpecialization;
@@ -29,19 +28,19 @@ class QualificationFactory extends Factory
             'employee_id' => Employee::factory(),
             'major_id' => Speciality::factory(),
             'minor_id' => Speciality::factory(),
-            'educational_sub_level_id' => LookupValue::factory()->state(['lookup_type_id' => QualificationLookupTypeEnum::EDUCATIONAL_SUBLEVELS->value]),
+            'educational_sub_level_id' => LookupValue::factory()->educationalSublevel(),
             'included_specialty_id' => IncludedSpecialization::factory(),
             'institution_name' => fake()->company(),
             'college_name' => fake()->company(),
-            'scientific_degree_id' => LookupValue::factory()->state(['lookup_type_id' => QualificationLookupTypeEnum::SCIENTIFIC_DEGREES->value]),
+            'scientific_degree_id' => LookupValue::factory()->scientificDegree(),
             'graduation_date' => fake()->date(),
             'graduation_country_id' => Country::factory(),
             'is_last_qualification' => fake()->boolean(),
 
-            'rating_id' => LookupValue::factory()->state(['lookup_type_id' => QualificationLookupTypeEnum::RATINGS->value]),
+            'rating_id' => LookupValue::factory()->rating(),
             'gpa' => fake()->randomFloat(2, 0, 4),
-            'gpa_type_id' => LookupValue::factory()->state(['lookup_type_id' => QualificationLookupTypeEnum::GPA_TYPES->value]),
-            'study_type_id' => LookupValue::factory()->state(['lookup_type_id' => QualificationLookupTypeEnum::STUDY_TYPES->value]),
+            'gpa_type_id' => LookupValue::factory()->gpaType(),
+            'study_type_id' => LookupValue::factory()->studyType(),
             'city' => fake()->city(),
             'is_authenticated' => fake()->boolean(),
         ];

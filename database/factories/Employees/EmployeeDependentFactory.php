@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Database\Factories\Employees;
 
-use App\Enums\LookupTypeEnum;
 use App\Models\Employees\Employee;
 use App\Models\Employees\EmployeeDependent;
 use App\Models\Lookups\LookupValue;
@@ -27,9 +26,9 @@ class EmployeeDependentFactory extends Factory
             'name_en' => fake()->name(),
             'name_ar' => fake('ar')->name(),
             'identification' => fake()->numerify('##########'),
-            'gender_id' => LookupValue::factory()->state(['lookup_type_id' => LookupTypeEnum::GENDER->value]),
+            'gender_id' => LookupValue::factory()->gender(),
             'date_of_birth' => fake()->date(),
-            'relationship_id' => LookupValue::factory()->state(['lookup_type_id' => LookupTypeEnum::FAMILY_RELATIONSHIPS->value]),
+            'relationship_id' => LookupValue::factory()->familyRelationsip(),
             'has_insurance' => (bool) random_int(0, 1),
             'ticket_ratio' => fake()->numberBetween(0, 100),
         ];
