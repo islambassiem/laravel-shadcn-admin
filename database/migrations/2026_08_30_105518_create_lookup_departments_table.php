@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('type')->nullable();
             $table->boolean('is_active')->default(true);
             $table->foreignId('parent_id')->nullable()->constrained('lookup_departments');
-            $table->foreignId('head_id')->nullable()->constrained('employees');
+            $table->foreignId('head_id')->nullable();
             $table->foreignId('created_by')->nullable()->constrained('users');
             $table->foreignId('updated_by')->nullable()->constrained('users');
             $table->timestamps();

@@ -25,7 +25,7 @@ class EmployeeSalaryComponentFactory extends Factory
         return [
             'employee_id' => Employee::factory(),
             'component_id' => LookupValue::factory()->component(),
-            'amount' => fake()->numberBetween(400000),
+            'amount' => fake()->numberBetween(),
             'effective_from' => fake()->date(),
             'effective_to' => fake()->optional()->date(),
             'revision_id' => Revision::factory(),

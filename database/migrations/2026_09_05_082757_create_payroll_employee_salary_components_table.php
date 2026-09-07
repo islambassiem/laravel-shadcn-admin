@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('employee_id')->constrained('employees');
             $table->foreignId('component_id')->constrained('payroll_lookup_values');
-            $table->unsignedInteger('amount');
+            $table->unsignedBigInteger('amount');
             $table->date('effective_from');
             $table->date('effective_to')->nullable();
             $table->foreignId('revision_id')->constrained('payroll_salary_revisions');
@@ -23,7 +23,7 @@ return new class extends Migration
             $table->foreignId('updated_by')->nullable()->constrained('users');
             $table->timestamps();
 
-            $table->index(['employee_id', 'effective_to']);
+            $table->index(['employee_id', 'effective_to'], 'active_salary_index');
         });
     }
 

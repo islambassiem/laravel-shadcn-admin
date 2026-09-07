@@ -73,7 +73,13 @@ return new class extends Migration
                 'middle_name_en',
                 'third_name_en',
                 'last_name_en',
-            ]);
+            ], 'full_name');
+        });
+
+        Schema::table('lookup_departments', function (Blueprint $table): void {
+            $table->foreign('head_id')
+                ->references('id')
+                ->on('employees');
         });
     }
 
