@@ -57,6 +57,12 @@ class PayrollLookupTypeSeeder extends Seeder
                 'code' => 'payroll_run_status',
                 'sort_order' => 7,
             ],
+            [
+                'name_en' => 'Payroll Payslip Status',
+                'name_ar' => '',
+                'code' => 'payroll_payslip_statues',
+                'sort_order' => 8,
+            ],
         ];
 
         foreach ($types as $type) {
