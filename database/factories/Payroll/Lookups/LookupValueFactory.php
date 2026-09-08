@@ -55,4 +55,18 @@ class LookupValueFactory extends Factory
             'lookup_type_id' => PayrollLookupTypeEnum::PAYROLL_PERIOD_STATUSES->value,
         ]);
     }
+
+    public function runType(): static
+    {
+        return $this->state([
+            'lookup_type_id' => PayrollLookupTypeEnum::PAYROLL_RUN_TYPES->value,
+        ]);
+    }
+
+    public function runStatus(): static
+    {
+        return $this->state([
+            'lookup_type_id' => PayrollLookupTypeEnum::PAYROLL_RUN_STATUSES->value,
+        ]);
+    }
 }

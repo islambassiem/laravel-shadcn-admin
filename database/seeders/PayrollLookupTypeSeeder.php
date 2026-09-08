@@ -45,6 +45,18 @@ class PayrollLookupTypeSeeder extends Seeder
                 'code' => 'payroll_period_runs',
                 'sort_order' => 5,
             ],
+            [
+                'name_en' => 'Payroll Run Type',
+                'name_ar' => 'نوع تشغيل مسير الرواتب',
+                'code' => 'payroll_run_type',
+                'sort_order' => 6,
+            ],
+            [
+                'name_en' => 'Payroll Run Status',
+                'name_ar' => 'حالة تشغيل مسير الرواتب',
+                'code' => 'payroll_run_status',
+                'sort_order' => 7,
+            ],
         ];
 
         foreach ($types as $type) {

@@ -40,6 +40,7 @@ class DatabaseSeeder extends Seeder
             EmployeeSalaryComponentSeeder::class,
             EmployeeBankSeeder::class,
             PayrollPeriodSeeder::class,
+            PayrollRunSeeder::class,
         ]);
     }
 }

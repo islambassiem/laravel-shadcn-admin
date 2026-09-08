@@ -15,4 +15,8 @@ enum PayrollLookupTypeEnum: int
     case PAYROLL_PERIOD_STATUSES = 4;
 
     case PAYROLL_PERIOD_RUNS = 5;
+
+    case PAYROLL_RUN_TYPES = 6;
+
+    case PAYROLL_RUN_STATUSES = 7;
 }
