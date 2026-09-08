@@ -33,6 +33,18 @@ class PayrollLookupTypeSeeder extends Seeder
                 'code' => 'banks',
                 'sort_order' => 3,
             ],
+            [
+                'name_en' => 'Payroll Status',
+                'name_ar' => 'حالة الراتب',
+                'code' => 'payroll_status',
+                'sort_order' => 4,
+            ],
+            [
+                'name_en' => 'Payroll Period Runs',
+                'name_ar' => 'مرات دورة الراتب',
+                'code' => 'payroll_period_runs',
+                'sort_order' => 5,
+            ],
         ];
 
         foreach ($types as $type) {

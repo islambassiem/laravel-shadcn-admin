@@ -54,4 +54,13 @@ class LookupValue extends Model
     {
         $query->where('lookup_type_id', PayrollLookupTypeEnum::BANKS->value);
     }
+
+    /**
+     * @param  Builder<LookupValue>  $query
+     */
+    #[Scope]
+    protected function periodStatuses(Builder $query): void
+    {
+        $query->where('lookup_type_id', PayrollLookupTypeEnum::PAYROLL_PERIOD_STATUSES->value);
+    }
 }

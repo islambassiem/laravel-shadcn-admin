@@ -11,4 +11,8 @@ enum PayrollLookupTypeEnum: int
     case SALARY_REVISION_TYPES = 2;
 
     case BANKS = 3;
+
+    case PAYROLL_PERIOD_STATUSES = 4;
+
+    case PAYROLL_PERIOD_RUNS = 5;
 }

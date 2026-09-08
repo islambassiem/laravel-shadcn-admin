@@ -48,4 +48,11 @@ class LookupValueFactory extends Factory
             'lookup_type_id' => PayrollLookupTypeEnum::BANKS->value,
         ]);
     }
+
+    public function periodStatus(): static
+    {
+        return $this->state([
+            'lookup_type_id' => PayrollLookupTypeEnum::PAYROLL_PERIOD_STATUSES->value,
+        ]);
+    }
 }

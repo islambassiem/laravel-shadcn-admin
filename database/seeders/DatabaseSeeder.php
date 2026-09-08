@@ -39,6 +39,7 @@ class DatabaseSeeder extends Seeder
             SalaryRevisionSeeder::class,
             EmployeeSalaryComponentSeeder::class,
             EmployeeBankSeeder::class,
+            PayrollPeriodSeeder::class,
         ]);
     }
 }
