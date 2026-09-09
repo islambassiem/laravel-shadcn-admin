@@ -26,7 +26,7 @@ class PayrollRunFactory extends Factory
             'period_id' => PayrollPeriod::factory(),
             'run_type' => LookupValue::factory()->runType(),
             'run_date' => fake()->date(),
-            'status' => LookupValue::factory()->runStatus(),
+            'status_id' => LookupValue::factory()->runStatus(),
             'processed_by' => Employee::factory(),
             'approved_by' => Employee::factory(),
             'approved_at' => fake()->date(),

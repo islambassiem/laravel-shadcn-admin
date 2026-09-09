@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
+use App\Models\Payroll\Lookups\LookupValue;
 use App\Models\Payroll\PayrollPeriod;
 use Illuminate\Database\Seeder;
 
@@ -14,6 +15,10 @@ class PayrollPeriodSeeder extends Seeder
      */
     public function run(): void
     {
-        PayrollPeriod::factory(10)->create();
+        $statusIds = LookupValue::query()->periodStatuses()->pluck('id');
+
+        PayrollPeriod::factory(10)->create([
+            'status_id' => $statusIds->random(),
+        ]);
     }
 }

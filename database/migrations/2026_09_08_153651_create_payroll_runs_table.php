@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('period_id')->constrained('payroll_periods');
             $table->foreignId('run_type')->constrained('payroll_lookup_values');
             $table->date('run_date');
-            $table->foreignId('status')->constrained('payroll_lookup_values');
+            $table->foreignId('status_id')->constrained('payroll_lookup_values');
             $table->foreignId('processed_by')->constrained('employees');
             $table->foreignId('approved_by')->constrained('employees');
             $table->timestamp('approved_at');

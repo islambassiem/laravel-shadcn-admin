@@ -63,6 +63,18 @@ class PayrollLookupTypeSeeder extends Seeder
                 'code' => 'payroll_payslip_statues',
                 'sort_order' => 8,
             ],
+            [
+                'name_en' => 'Payroll Payslip Earnings',
+                'name_ar' => 'المدفوعات',
+                'code' => 'payroll_payslip_earnings',
+                'sort_order' => 9,
+            ],
+            [
+                'name_en' => 'Payroll Payslip Deductions',
+                'name_ar' => 'الخصومات',
+                'code' => 'payroll_payslip_deductions',
+                'sort_order' => 10,
+            ],
         ];
 
         foreach ($types as $type) {

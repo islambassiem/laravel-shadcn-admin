@@ -63,4 +63,49 @@ class LookupValue extends Model
     {
         $query->where('lookup_type_id', PayrollLookupTypeEnum::PAYROLL_PERIOD_STATUSES->value);
     }
+
+    /**
+     * @param  Builder<LookupValue>  $query
+     */
+    #[Scope]
+    protected function runStatuses(Builder $query): void
+    {
+        $query->where('lookup_type_id', PayrollLookupTypeEnum::PAYROLL_RUN_STATUSES->value);
+    }
+
+    /**
+     * @param  Builder<LookupValue>  $query
+     */
+    #[Scope]
+    protected function runTypes(Builder $query): void
+    {
+        $query->where('lookup_type_id', PayrollLookupTypeEnum::PAYROLL_RUN_TYPES->value);
+    }
+
+    /**
+     * @param  Builder<LookupValue>  $query
+     */
+    #[Scope]
+    protected function payslipStatuses(Builder $query): void
+    {
+        $query->where('lookup_type_id', PayrollLookupTypeEnum::PAYROLL_PAYSLIP_STATUSES->value);
+    }
+
+    /**
+     * @param  Builder<LookupValue>  $query
+     */
+    #[Scope]
+    protected function payrollEarnings(Builder $query): void
+    {
+        $query->where('lookup_type_id', PayrollLookupTypeEnum::PAYROLL_PAYSLIP_EARNINGS->value);
+    }
+
+    /**
+     * @param  Builder<LookupValue>  $query
+     */
+    #[Scope]
+    protected function payrollDeductions(Builder $query): void
+    {
+        $query->where('lookup_type_id', PayrollLookupTypeEnum::PAYROLL_PAYSLIP_DEDUCTIONS->value);
+    }
 }

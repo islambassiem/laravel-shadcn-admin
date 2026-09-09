@@ -42,6 +42,7 @@ class DatabaseSeeder extends Seeder
             PayrollPeriodSeeder::class,
             PayrollRunSeeder::class,
             PayrollPayslipSeeder::class,
+            PayrollPayslipItemSeeder::class,
         ]);
     }
 }

@@ -21,4 +21,9 @@ enum PayrollLookupTypeEnum: int
     case PAYROLL_RUN_STATUSES = 7;
 
     case PAYROLL_PAYSLIP_STATUSES = 8;
+
+    case PAYROLL_PAYSLIP_EARNINGS = 9;
+
+    case PAYROLL_PAYSLIP_DEDUCTIONS = 10;
+
 }
