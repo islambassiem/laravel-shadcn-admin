@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Database\Factories\Payroll;
 
 use App\Models\Payroll\Lookups\LookupValue;
-use App\Models\Payroll\PayslipItem;
+use App\Models\Payroll\PayslipDeduction;
 use App\Models\PayrollPayslip;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<PayslipItem>
+ * @extends Factory<PayslipDeduction>
  */
-class PayslipItemFactory extends Factory
+class PayslipDeductionFactory extends Factory
 {
     /**
      * Define the model's default state.

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Models\Payroll;
 
 use App\Concerns\UserStamp;
-use Database\Factories\Payroll\PayslipItemFactory;
+use Database\Factories\Payroll\PayslipEarningFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -18,11 +18,11 @@ use Illuminate\Database\Eloquent\Model;
     'created_by',
     'updated_by',
 ])]
-class PayslipItem extends Model
+class PayslipEarning extends Model
 {
-    /** @use HasFactory<PayslipItemFactory> */
+    /** @use HasFactory<PayslipEarningFactory> */
     use HasFactory;
 
-    /** @use UserStamp <PayslipItem> */
+    /** @use UserStamp <PayslipEarning> */
     use UserStamp;
 }
