@@ -7,7 +7,7 @@ namespace Database\Seeders;
 use App\Models\Employees\Employee;
 use App\Models\Payroll\Lookups\LookupValue;
 use App\Models\Payroll\Salary\EmployeeSalaryComponent;
-use App\Models\Payroll\Salary\Revision;
+use App\Models\Payroll\Salary\SalaryRevision;
 use Illuminate\Database\Seeder;
 
 class EmployeeSalaryComponentSeeder extends Seeder
@@ -24,7 +24,7 @@ class EmployeeSalaryComponentSeeder extends Seeder
             ->components()
             ->pluck('id');
 
-        $revisionIds = Revision::query()
+        $revisionIds = SalaryRevision::query()
             ->pluck('id');
 
         EmployeeSalaryComponent::factory(100)->create([
