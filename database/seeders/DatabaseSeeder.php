@@ -43,6 +43,9 @@ class DatabaseSeeder extends Seeder
             PayrollRunSeeder::class,
             PayrollPayslipSeeder::class,
             PayrollPayslipItemSeeder::class,
+            WorkflowSeeder::class,
+            WorkflowStepSeeder::class,
+            WorkflowActionSeeder::class,
         ]);
     }
 }
