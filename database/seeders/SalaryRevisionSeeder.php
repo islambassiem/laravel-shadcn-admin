@@ -6,7 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Employees\Employee;
 use App\Models\Payroll\Lookups\LookupValue;
-use App\Models\Payroll\Salary\Revision;
+use App\Models\Payroll\Salary\SalaryRevision;
 use Illuminate\Database\Seeder;
 
 class SalaryRevisionSeeder extends Seeder
@@ -23,7 +23,7 @@ class SalaryRevisionSeeder extends Seeder
             ->revisions()
             ->pluck('id');
 
-        Revision::factory(100)->create([
+        SalaryRevision::factory(100)->create([
             'employee_id' => fn () => $employeeIds->random(),
             'revision_type_id' => fn () => $typeIds->random(),
         ]);

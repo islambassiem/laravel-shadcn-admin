@@ -6,13 +6,13 @@ namespace Database\Factories\Payroll\Salary;
 
 use App\Models\Employees\Employee;
 use App\Models\Payroll\Lookups\LookupValue;
-use App\Models\Payroll\Salary\Revision;
+use App\Models\Payroll\Salary\SalaryRevision;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Revision>
+ * @extends Factory<SalaryRevision>
  */
-class RevisionFactory extends Factory
+class SalaryRevisionFactory extends Factory
 {
     /**
      * Define the model's default state.

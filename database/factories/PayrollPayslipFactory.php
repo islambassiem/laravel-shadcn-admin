@@ -7,7 +7,7 @@ namespace Database\Factories;
 use App\Models\Employees\Employee;
 use App\Models\Payroll\Lookups\LookupValue;
 use App\Models\Payroll\PayrollRun;
-use App\Models\Payroll\Salary\Revision;
+use App\Models\Payroll\Salary\SalaryRevision;
 use App\Models\PayrollPayslip;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -29,7 +29,7 @@ class PayrollPayslipFactory extends Factory
         return [
             'run_id' => PayrollRun::factory(),
             'employee_id' => Employee::factory(),
-            'salary_revision_id' => Revision::factory(),
+            'salary_revision_id' => SalaryRevision::factory(),
             'days_worked' => fake()->numberBetween(0, 30),
             'gross_earnings' => $grossEarnings,
             'total_deductions' => $totalDeductions,

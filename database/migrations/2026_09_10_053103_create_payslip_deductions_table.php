@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('payslip_items', function (Blueprint $table): void {
+        Schema::create('payslip_deductions', function (Blueprint $table): void {
             $table->id();
             $table->foreignId('payslip_id')->constrained('payroll_payslips');
             $table->foreignId('item_type')->constrained('payroll_lookup_values');
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('payslip_items');
+        Schema::dropIfExists('payslip_deductions');
     }
 };

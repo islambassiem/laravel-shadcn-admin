@@ -7,7 +7,7 @@ namespace Database\Seeders;
 use App\Models\Employees\Employee;
 use App\Models\Payroll\Lookups\LookupValue;
 use App\Models\Payroll\PayrollRun;
-use App\Models\Payroll\Salary\Revision;
+use App\Models\Payroll\Salary\SalaryRevision;
 use App\Models\PayrollPayslip;
 use Illuminate\Database\Seeder;
 
@@ -20,7 +20,7 @@ class PayrollPayslipSeeder extends Seeder
     {
         $runIds = PayrollRun::query()->pluck('id');
         $employeeIds = Employee::query()->pluck('id');
-        $revisionIds = Revision::query()->pluck('id');
+        $revisionIds = SalaryRevision::query()->pluck('id');
         $statusIds = LookupValue::query()->payslipStatuses()->pluck('id');
 
         PayrollPayslip::factory(300)->create([

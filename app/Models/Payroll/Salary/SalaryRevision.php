@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Models\Payroll\Salary;
 
-use Database\Factories\Payroll\Salary\RevisionFactory;
+use Database\Factories\Payroll\Salary\SalaryRevisionFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Table;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -21,8 +21,8 @@ use Illuminate\Database\Eloquent\Model;
     'updated_by',
 ])]
 #[Table('payroll_salary_revisions')]
-class Revision extends Model
+class SalaryRevision extends Model
 {
-    /** @use HasFactory<RevisionFactory> */
+    /** @use HasFactory<SalaryRevisionFactory> */
     use HasFactory;
 }

@@ -7,7 +7,7 @@ namespace Database\Factories\Payroll\Salary;
 use App\Models\Employees\Employee;
 use App\Models\Payroll\Lookups\LookupValue;
 use App\Models\Payroll\Salary\EmployeeSalaryComponent;
-use App\Models\Payroll\Salary\Revision;
+use App\Models\Payroll\Salary\SalaryRevision;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -28,7 +28,7 @@ class EmployeeSalaryComponentFactory extends Factory
             'amount' => fake()->numberBetween(),
             'effective_from' => fake()->date(),
             'effective_to' => fake()->optional()->date(),
-            'revision_id' => Revision::factory(),
+            'revision_id' => SalaryRevision::factory(),
         ];
     }
 }
