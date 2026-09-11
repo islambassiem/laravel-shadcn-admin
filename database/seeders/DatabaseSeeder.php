@@ -47,9 +47,6 @@ class DatabaseSeeder extends Seeder
             WorkflowActionSeeder::class,
             PayslipEarningSeeder::class,
             PayslipDeductionSeeder::class,
-            WorkflowSeeder::class,
-            WorkflowStepSeeder::class,
-            WorkflowActionSeeder::class,
         ]);
     }
 }

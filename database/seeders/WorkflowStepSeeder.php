@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
+use App\Models\Workflow\Workflow;
 use App\Models\Workflow\WorkflowStep;
 use Illuminate\Database\Seeder;
 
@@ -14,6 +15,10 @@ class WorkflowStepSeeder extends Seeder
      */
     public function run(): void
     {
-        WorkflowStep::factory(50)->create();
+        $workflowIds = Workflow::query()->pluck('id');
+
+        WorkflowStep::factory(50)->create([
+            'workflow_id' => fn () => $workflowIds->random(),
+        ]);
     }
 }
