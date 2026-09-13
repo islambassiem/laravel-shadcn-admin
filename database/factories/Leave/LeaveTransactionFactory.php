@@ -4,6 +4,7 @@ namespace Database\Factories\Leave;
 
 use App\Enums\LeaveTransactionTypeEnum;
 use App\Models\Employees\Employee;
+use App\Models\Leave\LeaveEntitlement;
 use App\Models\Leave\LeaveRequest;
 use App\Models\Leave\LeaveTransaction;
 use App\Models\Leave\LeaveType;
@@ -31,14 +32,14 @@ class LeaveTransactionFactory extends Factory
         return [
             'employee_id' => Employee::factory(),
             'leave_type_id' => LeaveType::factory(),
-            'leave_entitlement_id' => '',
+            'leave_entitlement_id' => LeaveEntitlement::factory(),
             'leave_request_id' => LeaveRequest::factory(),
             'transaction_type' => fake()->randomElement(LeaveTransactionTypeEnum::cases()),
             'days' => $days,
-            'transaction_date' => '',
+            'transaction_date' => fake()->date(),
             'start_date' => $startDate,
             'end_date' => $endDate,
-            'balance_after' => '',
+            'balance_after' => fake()->numberBetween(0, 60),
             'pay_rate' => fake()->randomElement([0, 50, 100]),
             'expires_at' => fake()->date(),
             'payroll_processed_at' => fake()->date(),

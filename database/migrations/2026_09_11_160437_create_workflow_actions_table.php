@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('actionable_id');
             $table->foreignId('actor_id')->constrained('employees');
             $table->foreignId('role_id')->constrained('spatie_roles');
-            $table->integer('action');
+            $table->string('action');
             $table->text('comment')->nullable();
             $table->foreignId('created_by')->nullable()->constrained('users');
             $table->foreignId('updated_by')->nullable()->constrained('users');

@@ -21,7 +21,7 @@ class IdentityFactory extends Factory
      */
     public function definition(): array
     {
-        $issueDate = Date::createFromFormat('Y-m-d', fake()->date());
+        $issueDate = Date::parse(fake()->date());
         $types = IdentityTypeEnum::cases();
 
         return [
@@ -32,7 +32,7 @@ class IdentityFactory extends Factory
             'identity_number' => fake()->unique()->numerify('##########'),
             'place_of_issue' => fake()->city(),
             'issue_date' => $issueDate,
-            'expiry_date' => $issueDate?->addYears(5),
+            'expiry_date' => $issueDate->addYears(5),
         ];
     }
 }

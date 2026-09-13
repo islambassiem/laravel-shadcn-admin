@@ -88,12 +88,12 @@ return new class extends Migration
                 'employee_id',
                 'leave_type_id',
                 'transaction_date',
-            ]);
+            ], 'idx_employee_leave_type_transaction_date');
 
             $table->index([
                 'leave_entitlement_id',
                 'transaction_date',
-            ]);
+            ], 'idx_leave_entitlement_transaction_date');
 
             $table->index('transaction_type');
         });

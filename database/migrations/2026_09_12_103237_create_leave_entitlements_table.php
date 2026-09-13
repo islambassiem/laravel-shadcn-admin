@@ -78,12 +78,12 @@ return new class extends Migration
                 'employee_id',
                 'leave_policy_id',
                 'leave_period_id',
-            ]);
+            ], 'unique_employee_policy_period');
 
             $table->index([
                 'employee_id',
                 'leave_type_id',
-            ]);
+            ], 'idx_employee_leave_type');
         });
     }
 
