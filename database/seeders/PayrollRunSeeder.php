@@ -23,11 +23,11 @@ class PayrollRunSeeder extends Seeder
         $statusIds = LookupValue::query()->runStatuses()->pluck('id');
 
         PayrollRun::factory(30)->create([
-            'period_id' => $periodIds->random(),
-            'run_type' => $typeIds->random(),
-            'processed_by' => $employeeIds->random(),
-            'approved_by' => $employeeIds->random(),
-            'status_id' => $statusIds->random(),
+            'period_id' => fn () => $periodIds->random(),
+            'run_type' => fn () => $typeIds->random(),
+            'processed_by' => fn () => $employeeIds->random(),
+            'approved_by' => fn () => $employeeIds->random(),
+            'status_id' => fn () => $statusIds->random(),
         ]);
     }
 }

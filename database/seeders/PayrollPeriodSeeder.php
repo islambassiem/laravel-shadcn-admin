@@ -18,7 +18,7 @@ class PayrollPeriodSeeder extends Seeder
         $statusIds = LookupValue::query()->periodStatuses()->pluck('id');
 
         PayrollPeriod::factory(10)->create([
-            'status_id' => $statusIds->random(),
+            'status_id' => fn () => $statusIds->random(),
         ]);
     }
 }

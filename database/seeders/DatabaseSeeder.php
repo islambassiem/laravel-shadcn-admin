@@ -47,6 +47,19 @@ class DatabaseSeeder extends Seeder
             WorkflowActionSeeder::class,
             PayslipEarningSeeder::class,
             PayslipDeductionSeeder::class,
+            LeaveTypeSeeder::class,
+            LeaveRequestSeeder::class,
+            LeavePolicySeeder::class,
+            EmployeeLeavePolicySeeder::class,
+            LeavePeriodSeeder::class,
+            LeaveEntitlementSeeder::class,
+            LeaveCarryoverSeeder::class,
+            LeaveTransactionSeeder::class,
+            LeaveEncashmentSeeder::class,
+            LeaveBalanceSeeder::class,
+            SickLeaveRuleSeeder::class,
+            EmployeeSickLeaveCycleSeeder::class,
+            ShortLeaveTypeSeeder::class,
         ]);
     }
 }

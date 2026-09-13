@@ -1,0 +1,35 @@
+<?php
+
+namespace Database\Factories\ShortLeave;
+
+use Illuminate\Support\Facades\Date;
+use App\Enums\WorkflowActionEnum;
+use App\Models\Employees\Employee;
+use App\Models\ShortLeave\ShortLeaveRequest;
+use App\Models\ShortLeave\ShortLeaveType;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends Factory<ShortLeaveRequest>
+ */
+class ShortLeaveRequestFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        $from = Date::parse(fake()->date('H:i:s'));
+
+        return [
+            'employee_id' => Employee::factory(),
+            'short_leave_type_id' => ShortLeaveType::factory(),
+            'short_leave_date' => fake()->date(),
+            'short_leave_from' => $from->format('H:i:m'),
+            'short_leave_to' => $from->addHours(3),
+            'status' => fake()->randomElement(WorkflowActionEnum::cases()),
+        ];
+    }
+}

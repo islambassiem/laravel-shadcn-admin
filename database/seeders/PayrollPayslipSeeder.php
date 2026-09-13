@@ -24,10 +24,10 @@ class PayrollPayslipSeeder extends Seeder
         $statusIds = LookupValue::query()->payslipStatuses()->pluck('id');
 
         PayrollPayslip::factory(300)->create([
-            'run_id' => $runIds->random(),
-            'employee_id' => $employeeIds->random(),
-            'salary_revision_id' => $revisionIds->random(),
-            'status_id' => $statusIds->random(),
+            'run_id' => fn () => $runIds->random(),
+            'employee_id' => fn () => $employeeIds->random(),
+            'salary_revision_id' => fn () => $revisionIds->random(),
+            'status_id' => fn () => $statusIds->random(),
         ]);
     }
 }

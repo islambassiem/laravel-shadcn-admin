@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace App\Enums;
 
-enum WorkflowActionEnum: int
+enum WorkflowActionEnum: string
 {
-    case PENDING = 1;
+    case PENDING = 'pending';
 
-    case APPROVED = 2;
+    case APPROVED = 'approved';
 
-    case REJECTED = 3;
+    case REJECTED = 'rejected';
+
+    case CANCELLED = 'cancelled';
 }
