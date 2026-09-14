@@ -6,7 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Employees\Employee;
 use App\Models\Leave\LeaveRequest;
-use App\Models\Leave\LeaveType;
+use App\Models\Lookup\LeaveType;
 use Illuminate\Database\Seeder;
 
 class LeaveRequestSeeder extends Seeder

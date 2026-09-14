@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use App\Models\Organization\ManagerialRole;
+use App\Models\Lookup\ManagerialRole;
 use Illuminate\Database\Seeder;
 
 class ManagerialRoleSeeder extends Seeder

@@ -16,7 +16,7 @@ class QualificationIncludedSpecializationSeeder extends Seeder
     {
         DataSeeder::run(
             filename: 'included_specializations.json',
-            table: 'qualifications_included_specializations'
+            table: 'lookup_qualifications_included_specializations'
         );
     }
 }

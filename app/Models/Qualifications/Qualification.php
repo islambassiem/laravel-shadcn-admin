@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Models\Qualifications;
 
+use App\Concerns\UserStamp;
 use Database\Factories\Qualifications\QualificationFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -35,8 +36,6 @@ class Qualification extends Model
     /** @use HasFactory<QualificationFactory> */
     use HasFactory;
 
-    protected static function newFactory(): QualificationFactory
-    {
-        return QualificationFactory::new();
-    }
+    /** @use UserStamp<Qualification> */
+    use UserStamp;
 }

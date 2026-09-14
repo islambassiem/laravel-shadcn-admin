@@ -17,9 +17,9 @@ return new class extends Migration
             $table->string('name_en')->nullable();
             $table->string('name_ar')->nullable();
             $table->string('identification');
-            $table->foreignId('gender_id')->constrained('system_lookup_values');
+            $table->foreignId('gender_id')->constrained('lookup_genders');
             $table->date('date_of_birth');
-            $table->foreignId('relationship_id')->constrained('system_lookup_values');
+            $table->foreignId('relationship_id')->constrained('lookup_family_relationships');
             $table->boolean('has_insurance')->default(false);
             $table->integer('ticket_ratio')->default(0);
             $table->foreignId('created_by')->nullable()->constrained('users');

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use App\Models\Workflow\Workflow;
+use App\Models\Lookup\Workflow;
 use Illuminate\Database\Seeder;
 
 class WorkflowSeeder extends Seeder

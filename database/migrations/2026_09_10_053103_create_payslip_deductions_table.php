@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('payslip_deductions', function (Blueprint $table): void {
             $table->id();
             $table->foreignId('payslip_id')->constrained('payroll_payslips');
-            $table->foreignId('item_type')->constrained('payroll_lookup_values');
+            $table->foreignId('deduction_id')->constrained('lookup_payroll_deductions');
             $table->unsignedBigInteger('amount');
             $table->text('description')->nullable();
             $table->foreignId('created_by')->nullable()->constrained('users');

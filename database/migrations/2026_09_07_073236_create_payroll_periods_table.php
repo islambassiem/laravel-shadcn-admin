@@ -17,7 +17,7 @@ return new class extends Migration
             $table->date('start_date');
             $table->date('end_date');
             $table->date('pay_date');
-            $table->foreignId('status_id')->constrained('payroll_lookup_values');
+            $table->string('status');
             $table->foreignId('created_by')->nullable()->constrained('users');
             $table->foreignId('updated_by')->nullable()->constrained('users');
             $table->timestamps();

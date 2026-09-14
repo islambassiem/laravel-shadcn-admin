@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Models\Payroll\Salary;
 
+use App\Concerns\UserStamp;
 use Database\Factories\Payroll\Salary\EmployeeSalaryComponentFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Table;
@@ -26,6 +27,9 @@ class EmployeeSalaryComponent extends Model
 {
     /** @use HasFactory<EmployeeSalaryComponentFactory> */
     use HasFactory;
+
+    /** @use UserStamp<EmployeeSalaryComponent> */
+    use UserStamp;
 
     /**
      * @return Attribute<float, int>

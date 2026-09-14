@@ -4,8 +4,8 @@ namespace Database\Factories\ShortLeave;
 
 use App\Enums\WorkflowActionEnum;
 use App\Models\Employees\Employee;
+use App\Models\Lookup\ShortLeaveType;
 use App\Models\ShortLeave\ShortLeaveRequest;
-use App\Models\ShortLeave\ShortLeaveType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Date;
 

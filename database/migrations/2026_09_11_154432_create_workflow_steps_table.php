@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('workflow_steps', function (Blueprint $table): void {
             $table->id();
-            $table->foreignId('workflow_id')->constrained('workflows');
+            $table->foreignId('workflow_id')->constrained('lookup_workflows');
             $table->string('name_en');
             $table->string('name_ar');
             $table->string('code')->nullable();

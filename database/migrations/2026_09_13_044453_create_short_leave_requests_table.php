@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('short_leave_requests', function (Blueprint $table): void {
             $table->id();
             $table->foreignId('employee_id')->constrained('employees');
-            $table->foreignId('short_leave_type_id')->constrained('short_leave_types');
+            $table->foreignId('short_leave_type_id')->constrained('lookup_short_leave_types');
             $table->date('short_leave_date');
             $table->time('short_leave_from');
             $table->time('short_leave_to');

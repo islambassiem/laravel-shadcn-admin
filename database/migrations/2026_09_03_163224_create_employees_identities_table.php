@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('employee_identities', function (Blueprint $table): void {
             $table->id();
             $table->foreignId('employee_id')->constrained('employees');
-            $table->foreignId('identity_type_id')->constrained('system_lookup_values');
+            $table->foreignId('identity_type_id')->constrained('lookup_identity_types');
             $table->string('identity_number')->index();
             $table->string('place_of_issue')->nullable();
             $table->date('issue_date')->nullable();

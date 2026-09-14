@@ -8,7 +8,7 @@ use App\Models\Employees\Employee;
 use App\Models\Leave\LeaveEntitlement;
 use App\Models\Leave\LeaveRequest;
 use App\Models\Leave\LeaveTransaction;
-use App\Models\Leave\LeaveType;
+use App\Models\Lookup\LeaveType;
 use Illuminate\Database\Seeder;
 
 class LeaveTransactionSeeder extends Seeder

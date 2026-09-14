@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use App\Enums\LookupTypeEnum;
-use App\Models\Employees\Category;
 use App\Models\Employees\Employee;
-use App\Models\Lookups\LookupValue;
-use App\Models\Organization\Department;
+use App\Models\Lookup\Category;
+use App\Models\Lookup\Department;
+use App\Models\Lookup\Gender;
+use App\Models\Lookup\MaritalStatus;
+use App\Models\Lookup\Religion;
+use App\Models\Lookup\SpecialNeed;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -19,26 +21,11 @@ class EmployeeSeeder extends Seeder
      */
     public function run(): void
     {
-        $lookups = LookupValue::query()->get(['id', 'lookup_type_id']);
-
         $users = User::factory(300)->create();
-        $maritalStatisIds = $lookups
-            ->filter(
-                fn ($item): bool => $item->lookup_type_id === LookupTypeEnum::MARITAL_STATUS->value
-            );
-        $religionIds = $lookups
-            ->filter(
-                fn ($item): bool => $item->lookup_type_id === LookupTypeEnum::RELIGION->value
-            );
-        $specialNeedIds = $lookups
-            ->filter(
-                fn ($item): bool => $item->lookup_type_id === LookupTypeEnum::SPECIAL_NEED->value
-            );
-        $genderIds = $lookups
-            ->filter(
-                fn ($item): bool => $item->lookup_type_id === LookupTypeEnum::GENDER->value
-            );
-
+        $maritalStatisIds = MaritalStatus::query()->pluck('id');
+        $religionIds = Religion::query()->pluck('id');
+        $specialNeedIds = SpecialNeed::query()->pluck('id');
+        $genderIds = Gender::query()->pluck('id');
         $countryIds = Category::query()->pluck('id');
         $departmentIds = Department::query()->pluck('id');
 
@@ -47,7 +34,7 @@ class EmployeeSeeder extends Seeder
                 'user_id' => $user->id,
                 'marital_status_id' => fn () => $maritalStatisIds->random(),
                 'religion_id' => fn () => $religionIds->random(),
-                'special_needs_id' => fn () => $specialNeedIds->random(),
+                'special_need_id' => fn () => $specialNeedIds->random(),
                 'gender_id' => fn () => $genderIds->random(),
                 'category_id' => fn () => $countryIds->random(),
                 'department_id' => fn () => $departmentIds->random(),

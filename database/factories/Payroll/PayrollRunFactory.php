@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Database\Factories\Payroll;
 
 use App\Models\Employees\Employee;
-use App\Models\Payroll\Lookups\LookupValue;
 use App\Models\Payroll\PayrollPeriod;
 use App\Models\Payroll\PayrollRun;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -24,9 +23,9 @@ class PayrollRunFactory extends Factory
     {
         return [
             'period_id' => PayrollPeriod::factory(),
-            'run_type' => LookupValue::factory()->runType(),
+            'run_type' => fake()->word(),
             'run_date' => fake()->date(),
-            'status_id' => LookupValue::factory()->runStatus(),
+            'status' => fake()->word(),
             'processed_by' => Employee::factory(),
             'approved_by' => Employee::factory(),
             'approved_at' => fake()->date(),

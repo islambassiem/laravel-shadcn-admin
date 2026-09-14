@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
-use App\Models\Payroll\Lookups\LookupValue;
+use App\Models\Lookup\Deduction;
+use App\Models\Payroll\PayrollPayslip;
 use App\Models\Payroll\PayslipDeduction;
-use App\Models\PayrollPayslip;
 use Illuminate\Database\Seeder;
 
 class PayslipDeductionSeeder extends Seeder
@@ -15,11 +17,11 @@ class PayslipDeductionSeeder extends Seeder
     public function run(): void
     {
         $payslipIds = PayrollPayslip::query()->pluck('id');
-        $deductionIds = LookupValue::query()->payrollDeductions()->pluck('id');
+        $deductionIds = Deduction::query()->pluck('id');
 
         PayslipDeduction::factory(300)->create([
             'payslip_id' => fn () => $payslipIds->random(),
-            'item_type' => fn () => $deductionIds->random(),
+            'deduction_id' => fn () => $deductionIds->random(),
         ]);
     }
 }

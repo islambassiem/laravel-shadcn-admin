@@ -18,7 +18,7 @@ return new class extends Migration
                 ->constrained('employees');
 
             $table->foreignId('leave_type_id')
-                ->constrained('leave_types');
+                ->constrained('lookup_leave_types');
 
             $table->foreignId('leave_policy_id')
                 ->constrained('leave_policies')

@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace Database\Factories\Employees;
 
-use App\Models\Employees\Category;
 use App\Models\Employees\Employee;
-use App\Models\Lookups\Country;
-use App\Models\Lookups\LookupValue;
-use App\Models\Organization\Department;
+use App\Models\Lookup\Category;
+use App\Models\Lookup\Country;
+use App\Models\Lookup\Department;
+use App\Models\Lookup\Gender;
+use App\Models\Lookup\MaritalStatus;
+use App\Models\Lookup\Religion;
+use App\Models\Lookup\SpecialNeed;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -39,11 +42,11 @@ class EmployeeFactory extends Factory
             'third_name_en' => fake()->randomElement([null, fake()->firstName()]),
             'last_name_en' => fake()->lastName(),
 
-            'marital_status_id' => LookupValue::factory()->maritalSataus(),
-            'religion_id' => LookupValue::factory()->religion(),
-            'special_needs_id' => LookupValue::factory()->specialNeed(),
+            'marital_status_id' => MaritalStatus::factory(),
+            'religion_id' => Religion::factory(),
+            'special_need_id' => SpecialNeed::factory(),
 
-            'gender_id' => LookupValue::factory()->gender(),
+            'gender_id' => Gender::factory(),
             'category_id' => Category::factory(),
             'department_id' => Department::factory(),
             'nationality_id' => Country::factory(),

@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Database\Seeders;
 
 use App\Models\Employees\Employee;
+use App\Models\Lookup\ShortLeaveType;
 use App\Models\ShortLeave\ShortLeaveRequest;
-use App\Models\ShortLeave\ShortLeaveType;
 use Illuminate\Database\Seeder;
 
 class ShortLeaveRequestSeeder extends Seeder

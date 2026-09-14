@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('leave_requests', function (Blueprint $table): void {
             $table->id();
-            $table->foreignId('leave_type_id')->constrained('leave_types');
+            $table->foreignId('leave_type_id')->constrained('lookup_leave_types');
             $table->foreignId('employee_id')->constrained('employees');
             $table->date('start_date');
             $table->date('end_date');

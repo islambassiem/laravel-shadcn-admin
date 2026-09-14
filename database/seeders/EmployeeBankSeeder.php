@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
 use App\Models\Employees\Employee;
+use App\Models\Lookup\Bank;
 use App\Models\Payroll\EmployeeBank;
-use App\Models\Payroll\Lookups\LookupValue;
 use Illuminate\Database\Seeder;
 
 class EmployeeBankSeeder extends Seeder
@@ -15,9 +17,7 @@ class EmployeeBankSeeder extends Seeder
     public function run(): void
     {
         $employeeIds = Employee::query()->pluck('id');
-        $bankIds = LookupValue::query()
-            ->banks()
-            ->pluck('id');
+        $bankIds = Bank::query()->pluck('id');
 
         EmployeeBank::factory(100)->create([
             'employee_id' => fn () => $employeeIds->pop(),

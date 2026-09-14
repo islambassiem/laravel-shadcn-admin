@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use App\Models\ShortLeave\ShortLeaveType;
+use App\Models\Lookup\ShortLeaveType;
 use Illuminate\Database\Seeder;
 
 class ShortLeaveTypeSeeder extends Seeder

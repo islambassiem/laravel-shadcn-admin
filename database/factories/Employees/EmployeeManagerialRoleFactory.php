@@ -6,7 +6,7 @@ namespace Database\Factories\Employees;
 
 use App\Models\Employees\Employee;
 use App\Models\Employees\EmployeeManagerialRole;
-use App\Models\Organization\ManagerialRole;
+use App\Models\Lookup\ManagerialRole;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

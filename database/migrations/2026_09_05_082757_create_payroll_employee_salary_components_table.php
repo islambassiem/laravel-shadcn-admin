@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('payroll_employee_salary_components', function (Blueprint $table): void {
             $table->id();
             $table->foreignId('employee_id')->constrained('employees');
-            $table->foreignId('component_id')->constrained('payroll_lookup_values');
+            $table->foreignId('component_id')->constrained('lookup_payroll_salary_components');
             $table->unsignedBigInteger('amount');
             $table->date('effective_from');
             $table->date('effective_to')->nullable();
-            $table->foreignId('revision_id')->constrained('payroll_salary_revisions');
+            $table->foreignId('revision_id')->constrained('lookup_payroll_salary_revisions');
             $table->foreignId('created_by')->nullable()->constrained('users');
             $table->foreignId('updated_by')->nullable()->constrained('users');
             $table->timestamps();

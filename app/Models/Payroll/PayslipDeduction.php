@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 #[Fillable([
     'payslip_id',
-    'item_type',
+    'deduction_id',
     'amount',
     'description',
     'created_by',

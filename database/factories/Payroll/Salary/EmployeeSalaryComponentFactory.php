@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Database\Factories\Payroll\Salary;
 
 use App\Models\Employees\Employee;
-use App\Models\Payroll\Lookups\LookupValue;
+use App\Models\Lookup\SalaryComponent;
 use App\Models\Payroll\Salary\EmployeeSalaryComponent;
-use App\Models\Payroll\Salary\SalaryRevision;
+use App\Models\Payroll\Salary\EmployeeSalaryRevision;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -24,11 +24,11 @@ class EmployeeSalaryComponentFactory extends Factory
     {
         return [
             'employee_id' => Employee::factory(),
-            'component_id' => LookupValue::factory()->component(),
+            'component_id' => SalaryComponent::factory(),
             'amount' => fake()->numberBetween(),
             'effective_from' => fake()->date(),
             'effective_to' => fake()->optional()->date(),
-            'revision_id' => SalaryRevision::factory(),
+            'revision_id' => EmployeeSalaryRevision::factory(),
         ];
     }
 }

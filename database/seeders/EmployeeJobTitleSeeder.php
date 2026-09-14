@@ -6,7 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Employees\Employee;
 use App\Models\Employees\EmployeeJobTitle;
-use App\Models\Organization\JobTitle;
+use App\Models\Lookup\JobTitle;
 use Illuminate\Database\Seeder;
 
 class EmployeeJobTitleSeeder extends Seeder

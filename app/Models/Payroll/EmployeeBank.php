@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Models\Payroll;
 
+use App\Concerns\UserStamp;
 use Database\Factories\Payroll\EmployeeBankFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Table;
@@ -22,4 +23,7 @@ class EmployeeBank extends Model
 {
     /** @use HasFactory<EmployeeBankFactory> */
     use HasFactory;
+
+    /** @use UserStamp<EmployeeBank> */
+    use UserStamp;
 }

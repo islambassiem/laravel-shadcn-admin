@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Factories\Workflow;
 
-use App\Models\Workflow\Workflow;
+use App\Models\Lookup\Workflow;
 use App\Models\Workflow\WorkflowStep;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Spatie\Permission\Models\Role;

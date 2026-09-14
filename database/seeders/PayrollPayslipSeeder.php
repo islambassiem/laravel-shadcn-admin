@@ -5,10 +5,9 @@ declare(strict_types=1);
 namespace Database\Seeders;
 
 use App\Models\Employees\Employee;
-use App\Models\Payroll\Lookups\LookupValue;
+use App\Models\Lookup\SalaryRevision;
+use App\Models\Payroll\PayrollPayslip;
 use App\Models\Payroll\PayrollRun;
-use App\Models\Payroll\Salary\SalaryRevision;
-use App\Models\PayrollPayslip;
 use Illuminate\Database\Seeder;
 
 class PayrollPayslipSeeder extends Seeder
@@ -21,13 +20,11 @@ class PayrollPayslipSeeder extends Seeder
         $runIds = PayrollRun::query()->pluck('id');
         $employeeIds = Employee::query()->pluck('id');
         $revisionIds = SalaryRevision::query()->pluck('id');
-        $statusIds = LookupValue::query()->payslipStatuses()->pluck('id');
 
         PayrollPayslip::factory(300)->create([
             'run_id' => fn () => $runIds->random(),
             'employee_id' => fn () => $employeeIds->random(),
             'salary_revision_id' => fn () => $revisionIds->random(),
-            'status_id' => fn () => $statusIds->random(),
         ]);
     }
 }

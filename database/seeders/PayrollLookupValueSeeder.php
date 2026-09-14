@@ -20,7 +20,7 @@ class PayrollLookupValueSeeder extends Seeder
             DataSeeder::run(
                 filename: $filename,
                 table: 'payroll_lookup_values',
-                lookup_type_id: $type->value
+                // lookup_type_id: $type->value
             );
         }
     }

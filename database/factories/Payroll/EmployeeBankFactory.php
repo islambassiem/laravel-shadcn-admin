@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Database\Factories\Payroll;
 
 use App\Models\Employees\Employee;
+use App\Models\Lookup\Bank;
 use App\Models\Payroll\EmployeeBank;
-use App\Models\Payroll\Lookups\LookupValue;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -23,7 +23,7 @@ class EmployeeBankFactory extends Factory
     {
         return [
             'employee_id' => Employee::factory(),
-            'bank_id' => LookupValue::factory()->bank(),
+            'bank_id' => Bank::factory(),
             'iban' => fake()->iban('SA'),
         ];
     }

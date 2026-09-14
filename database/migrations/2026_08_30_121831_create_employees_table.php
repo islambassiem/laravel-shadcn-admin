@@ -36,11 +36,11 @@ return new class extends Migration
                 ->storedAs("CONCAT_WS(' ', first_name_en, middle_name_en, third_name_en, last_name_en)")
                 ->index();
 
-            $table->foreignId('marital_status_id')->nullable()->constrained('system_lookup_values');
-            $table->foreignId('religion_id')->nullable()->constrained('system_lookup_values');
-            $table->foreignId('special_needs_id')->nullable()->constrained('system_lookup_values');
+            $table->foreignId('marital_status_id')->nullable()->constrained('lookup_marital_statuses');
+            $table->foreignId('religion_id')->nullable()->constrained('lookup_religions');
+            $table->foreignId('special_need_id')->nullable()->constrained('lookup_special_needs');
 
-            $table->foreignId('gender_id')->constrained('system_lookup_values');
+            $table->foreignId('gender_id')->constrained('lookup_genders');
             $table->foreignId('category_id')->constrained('lookup_categories');
             $table->foreignId('department_id')->constrained('lookup_departments');
             $table->foreignId('nationality_id')->constrained('lookup_countries');

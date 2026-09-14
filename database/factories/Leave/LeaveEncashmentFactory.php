@@ -8,7 +8,7 @@ use App\Enums\WorkflowActionEnum;
 use App\Models\Employees\Employee;
 use App\Models\Leave\LeaveEncashment;
 use App\Models\Leave\LeaveEntitlement;
-use App\Models\Leave\LeaveType;
+use App\Models\Lookup\LeaveType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

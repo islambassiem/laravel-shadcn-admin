@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
-use App\Models\Payroll\Lookups\LookupValue;
+use App\Models\Lookup\Earning;
+use App\Models\Payroll\PayrollPayslip;
 use App\Models\Payroll\PayslipEarning;
-use App\Models\PayrollPayslip;
 use Illuminate\Database\Seeder;
 
 class PayslipEarningSeeder extends Seeder
@@ -15,11 +17,11 @@ class PayslipEarningSeeder extends Seeder
     public function run(): void
     {
         $payslipIds = PayrollPayslip::query()->pluck('id');
-        $earningIds = LookupValue::query()->payrollEarnings()->pluck('id');
+        $earningIds = Earning::query()->pluck('id');
 
         PayslipEarning::factory(300)->create([
             'payslip_id' => fn () => $payslipIds->random(),
-            'item_type' => fn () => $earningIds->random(),
+            'earning_id' => fn () => $earningIds->random(),
         ]);
     }
 }

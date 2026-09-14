@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Models\Employees;
 
+use App\Concerns\UserStamp;
 use Database\Factories\Employees\EmployeeFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -23,7 +24,7 @@ use Illuminate\Database\Eloquent\Model;
     'last_name_en',
     'marital_status_id',
     'religion_id',
-    'special_needs_id',
+    'special_need_id',
     'gender_id',
     'category_id',
     'department_id',
@@ -46,4 +47,7 @@ class Employee extends Model
 {
     /** @use HasFactory<EmployeeFactory> */
     use HasFactory;
+
+    /** @use UserStamp<Employee> */
+    use UserStamp;
 }

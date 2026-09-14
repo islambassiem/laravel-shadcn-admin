@@ -7,7 +7,7 @@ namespace Database\Factories\Leave;
 use App\Enums\AccrualFrequencyEnum;
 use App\Enums\YearTypeEnum;
 use App\Models\Leave\LeavePolicy;
-use App\Models\Leave\LeaveType;
+use App\Models\Lookup\LeaveType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

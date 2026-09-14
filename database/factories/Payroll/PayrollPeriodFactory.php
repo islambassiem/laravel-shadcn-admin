@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Database\Factories\Payroll;
 
-use App\Models\Payroll\Lookups\LookupValue;
 use App\Models\Payroll\PayrollPeriod;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -25,7 +24,7 @@ class PayrollPeriodFactory extends Factory
             'start_date' => fake()->date(),
             'end_date' => fake()->date(),
             'pay_date' => fake()->date(),
-            'status_id' => LookupValue::factory()->periodStatus(),
+            'status' => fake()->word(),
         ];
     }
 }

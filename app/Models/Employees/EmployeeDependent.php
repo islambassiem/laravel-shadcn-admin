@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Models\Employees;
 
+use App\Concerns\UserStamp;
 use Database\Factories\Employees\EmployeeDependentFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
-use Illuminate\Database\Eloquent\Attributes\Table;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -23,9 +23,11 @@ use Illuminate\Database\Eloquent\Model;
     'created_by',
     'updated_by',
 ])]
-#[Table('employee_dependents')]
 class EmployeeDependent extends Model
 {
     /** @use HasFactory<EmployeeDependentFactory> */
     use HasFactory;
+
+    /** @use UserStamp<EmployeeDependent> */
+    use UserStamp;
 }

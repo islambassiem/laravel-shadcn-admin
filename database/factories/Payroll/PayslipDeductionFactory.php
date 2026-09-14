@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Database\Factories\Payroll;
 
-use App\Models\Payroll\Lookups\LookupValue;
+use App\Models\Lookup\Deduction;
+use App\Models\Payroll\PayrollPayslip;
 use App\Models\Payroll\PayslipDeduction;
-use App\Models\PayrollPayslip;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -23,7 +23,7 @@ class PayslipDeductionFactory extends Factory
     {
         return [
             'payslip_id' => PayrollPayslip::factory(),
-            'item_type' => LookupValue::factory(),
+            'deduction_id' => Deduction::factory(),
             'amount' => fake()->numberBetween(),
             'description' => fake()->sentence(),
         ];
