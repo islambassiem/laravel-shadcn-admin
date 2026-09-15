@@ -8,6 +8,7 @@ use Inertia\Inertia;
 // Auth routes
 Route::prefix('/')->group(function (): void {
     Route::get('/sign-in', fn () => Inertia::render('auth/sign-in'))->name('auth.sign-in');
+    Route::get('/login', fn () => Inertia::render('auth/login'))->name('auth.login');
 
     Route::get('/sign-in-2', fn () => Inertia::render('auth/sign-in-2'))->name('auth.sign-in');
 
@@ -65,3 +66,5 @@ Route::prefix('errors')->name('error.')->group(function (): void {
     // Fallback for 404
     Route::fallback(fn () => Inertia::render('not-found'));
 });
+
+Route::get('home', fn () => Inertia::render('home'))->name('home');
